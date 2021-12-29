@@ -8,6 +8,7 @@ words below headlines
 
  [Jekyll](https://jekyllrb.com/) 
 
+
 <table border="0">
   <tr>
     <td width="75%">
@@ -33,19 +34,6 @@ words below headlines
 ```markdown
 代码模块
 
-# 标题1
-## 标题 2
-### 标题 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
 被渲染的模块
