@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: '李春蕾博客',
   tagline: '学习笔记',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://chunleili.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -18,6 +18,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'chunleili', // Usually your GitHub org/user name.
   projectName: 'chunleili.github.io', // Usually your repo name.
+  trailingSlash:false,
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
