@@ -32,14 +32,16 @@ const config = {
     [
       '@docusaurus/preset-classic',
       ({
-        docs: false,
+        docs: {
+          sidebarPath: require.resolve('./sidebars.js'),
+            },
         blog: {
           routeBasePath:'/',
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/chunleili/myPage',
+            'https://github.com/chunleili/chunleili.github.io',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -58,7 +60,6 @@ const config = {
         //   src: 'img/logo.svg',
         // },
         items: [
-          
           {
             href: 'https://github.com/chunleili',
             label: 'GitHub',
