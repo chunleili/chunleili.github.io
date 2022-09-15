@@ -29,20 +29,20 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Get yarn cache
-        id: yarn-cache
-        run: echo "::set-output name=dir::$(yarn cache dir)"
+      - name: Get npm cache
+        id: npm-cache
+        run: echo "::set-output name=dir::$(npm cache dir)"
 
       - name: Cache dependencies
         uses: actions/cache@v2
         with:
-          path: ${{ steps.yarn-cache.outputs.dir }}
-          key: ${{ runner.os }}-website-${{ hashFiles('**/yarn.lock') }}
+          path: ${{ steps.npm-cache.outputs.dir }}
+          key: ${{ runner.os }}-website-${{ hashFiles('**/npm.lock') }}
           restore-keys: |
             ${{ runner.os }}-website-
 
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
+      - run: npm ci
+      - run: npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
