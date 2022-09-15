@@ -21,7 +21,7 @@ jobs:
           cache-dependency-path: './package-lock.json'
 
       - name: build website
-        working-directory: myWeb
+        working-directory: chunleili.github.io
         run: |
           yarn install --frozen-lockfile
           yarn build
