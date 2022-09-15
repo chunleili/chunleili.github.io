@@ -47,5 +47,3 @@ cmd /C 'set "GIT_USER=<GITHUB_USERNAME>" && yarn deploy'
 
 这个命令来部署，如果没有安装yarn就要先npm install yarn一下。
 
-
-
