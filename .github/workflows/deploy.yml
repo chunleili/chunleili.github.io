@@ -18,6 +18,7 @@ jobs:
         with:
           node-version: '14'
           cache: yarn
+          cache-dependency-path: './package-lock.json'
 
       - name: build website
         working-directory: myWeb
