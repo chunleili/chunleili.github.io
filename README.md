@@ -1,41 +1,17 @@
-# Website
+# 自我介绍
+大家好的😄，我是李春蕾。现在是北航VR实验室的博士生。研究方向是图形学仿真，主要是流体仿真。
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+我现在正在做一个用于图形学仿真的库。只是为了自己用起来方便的一个工具包。它基于taichi。我希望用它来实现大部分主流仿真算法。如果有兴趣可以看一看：
+[moi-图形学仿真工具包](https://github.com/chunleili/moi)
 
-### Installation
+我的email是： li_cl@foxmail.com
 
-```
-$ yarn
-```
+我之前用CSDN做笔记，但是它广告太多了😒，所以我决定自己做一个个人博客。千里之行，始于足下，我会慢慢把干货搬上来的的👍。
 
-### Local Development
+这是我的CSDN博客：[beidou111的博客](https://blog.csdn.net/weixin_43940314?spm=1011.2415.3001.5343)
 
-```
-$ yarn start
-```
+对了！还有我的B站。因为视频讲解和博客的图文形式还是有些区别的，因此很多时候我也会做视频讲解。我也是初学者，如果理解有误的地方，请直接指出来，大家一起进步。
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+这是我的B站账号：[只喝白开水](https://space.bilibili.com/2411870/)
 
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+欢迎大家找我讨论👏！
