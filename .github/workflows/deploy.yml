@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master
+      - main
     # 如果你想要进一步定义触发条件、路径等，可以查看文档
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
@@ -36,5 +36,5 @@ jobs:
           # https://github.com/actions/checkout/issues/13#issuecomment-724415212
           # 如果不设置这两个字段，GH actions 机器人会被默认使用。
           # 你可以用自己的用户信息替换它们。
-          user_name: my-github-actions
+          user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
