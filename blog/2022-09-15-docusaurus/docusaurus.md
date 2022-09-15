@@ -21,7 +21,7 @@ https://www.bilibili.com/video/BV1rW4y1i7zC?spm_id_from=333.999.0.0&vd_source=e1
 ```javascript
 npx create-docusaurus myPage classic
 ```
-::: tip 提示
+:::tip 提示
 请先安装npm，以及docusaurus
 :::
 
