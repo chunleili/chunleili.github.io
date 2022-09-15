@@ -47,6 +47,12 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/chunleili/chunleili.github.io/tree/master/blog',
+          blogSidebarTitle: '全部博文',
+          blogSidebarCount: 'ALL',
+
+          blogTitle: '李春蕾的博客',
+          blogDescription: '大家好呀！',
+          postsPerPage: 10,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
