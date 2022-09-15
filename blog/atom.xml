@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chunleili.github.io/blog</id>
     <title>Chunlei Li Blog</title>
-    <updated>2022-09-15T00:00:00.000Z</updated>
+    <updated>2022-09-16T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chunleili.github.io/blog"/>
     <subtitle>Chunlei Li Blog</subtitle>
+    <entry>
+        <title type="html"><![CDATA[VS Code中写mardown直接粘贴图片的神器]]></title>
+        <id>paste-image</id>
+        <link href="https://chunleili.github.io/blog/paste-image"/>
+        <updated>2022-09-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[有个插件很好用，叫做paste image]]></summary>
+        <content type="html"><![CDATA[<p>有个插件很好用，叫做paste image
+<img loading="lazy" src="/assets/images/2022-09-16-01-24-45-f346005b69c23d58bc815dd8b8627ef9.png" width="994" height="372" class="img_ev3q"></p><p>这个插件让你在VS Code当中可以直接粘贴剪切板中的图片，它还会将图片自动拷贝到你的当前目录。简直是效率神器！</p><h1>用法</h1><p>先截屏，然后在VS Code中按下shift + control + p, 然后点击pasteImage
+<img loading="lazy" src="/assets/images/2022-09-16-01-30-15-32bfb2b5bdae1a6fd3b42f8ffc3d4064.png" width="1435" height="811" class="img_ev3q"></p><p>你还可以设置快捷键
+比如我设置的快捷键就是alt+v(防止和文本的粘贴混淆)
+设置的方法很简单，只需要点击小齿轮</p><p><img loading="lazy" src="/assets/images/2022-09-16-01-31-04-dced05d8b68b59e7c85d916c5b571a0f.png" width="1424" height="795" class="img_ev3q">
+然后在弹出的窗口设置快捷键即可</p><p><img loading="lazy" src="/assets/images/2022-09-16-01-31-51-54a7f430ab701d953c72184f21eca3e8.png" width="1550" height="1096" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>李春蕾 Chunlei Li</name>
+            <uri>https://github.com/chunleili</uri>
+        </author>
+        <category label="markdown" term="markdown"/>
+        <category label="VS Code" term="VS Code"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[介绍我自己]]></title>
         <id>/</id>
@@ -49,6 +68,26 @@
         </author>
         <category label="welcome" term="welcome"/>
         <category label="test" term="test"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[怎样利用github Action 自动部署]]></title>
+        <id>auto-deploy</id>
+        <link href="https://chunleili.github.io/blog/auto-deploy"/>
+        <updated>2022-09-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[前文说了如何部署，但是每次都要运行yarn deploy也太麻烦了。主要是如果你想在一台没有安装docusaurus的电脑上更新你的博客，那就没办法了。只能配环境然后yarn deploy。]]></summary>
+        <content type="html"><![CDATA[<p>前文说了如何部署，但是每次都要运行yarn deploy也太麻烦了。主要是如果你想在一台没有安装docusaurus的电脑上更新你的博客，那就没办法了。只能配环境然后yarn deploy。</p><p>但是好在有许多自动化部署的工具。其中GitHub Action是github自己在2018年推出的服务。你只需要在项目的根目录下增加.github/workflow/xxx.yml即可</p><p>如图所示</p><p><img loading="lazy" alt="dir" src="/assets/images/dir-7adb76ab57d6d9fee6add9a6bc8bb949.png" width="419" height="158" class="img_ev3q"></p><p>每个文件都是单独的一个工作流。</p><p>工作流也很简单，就是类似于你在自己的电脑上运行安装等等命令。</p><p>假如你的workflow中间出问题了，github就会自动报错，然后给你发个邮件。如图</p><p><img loading="lazy" src="/assets/images/2022-09-16-01-09-57-77e664d1a21837a2ea0eb80e2542bf46.png" width="1107" height="936" class="img_ev3q"></p><p>不成功的workflow是这样的
+<img loading="lazy" src="/assets/images/2022-09-16-01-21-33-c391cd3c39b0618cc2d5082e36d09c83.png" width="2330" height="748" class="img_ev3q"></p><p>点开会看到
+<img loading="lazy" src="/assets/images/2022-09-16-01-22-05-ed0b48aaeec2305009346e2f1be95b14.png" width="1870" height="1219" class="img_ev3q"></p><p>再点开，会看到具体哪里错了
+<img loading="lazy" src="/assets/images/2022-09-16-01-22-37-b43dc2bbb180ba9b28c2fef41dd696c0.png" width="2697" height="1575" class="img_ev3q">
+我这里显然是版本号错误</p><p>修改之后可以看到正确的
+<img loading="lazy" src="/assets/images/2022-09-16-01-23-15-b4fc77d0cf13abc093c1e2a8a7d09827.png" width="2378" height="424" class="img_ev3q"></p><p>经过不断的探索，我终于把所有的工作流报错解决了</p><p>在此分享一下我的deploy.yml文件</p><div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># .github/workflows/deploy.yml</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">name: GitHub Pages</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">on:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  push:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    branches:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      - master</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  pull_request:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">jobs:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  deploy:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    name: Deploy to my Github Pages</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    runs-on: ubuntu-latest</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    steps:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      - uses: actions/checkout@v2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      - uses: actions/setup-node@v2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        with:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          node-version: '18'</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          cache: yarn</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          cache-dependency-path: './package-lock.json'</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      - name: build website</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        run: |</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          yarn install --frozen-lockfile</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          yarn build</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      - name: Deploy to my Github Pages</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        uses: peaceiris/actions-gh-pages@v3</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        with:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          github_token: ${{ secrets.GITHUB_TOKEN }}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          publish_dir: ./build</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          user_name: github-actions[bot]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          user_email: 41898282+github-actions[bot]@users.noreply.github.com</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg class="copyButtonIcon_y97N" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="copyButtonSuccessIcon_LjdS" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content>
+        <author>
+            <name>李春蕾 Chunlei Li</name>
+            <uri>https://github.com/chunleili</uri>
+        </author>
+        <category label="docusaurus" term="docusaurus"/>
+        <category label="front-end" term="front-end"/>
+        <category label="github" term="github"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[如何部署到github pages]]></title>
