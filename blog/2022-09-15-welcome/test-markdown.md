@@ -1,11 +1,11 @@
 ---
 slug: test
-title: 测试第一个新博客
+title: 博客的Markdown用法
 authors: [chunlei]
 tags: [welcome, test]
 ---
 
-大家好， 测试一下新的博客。
+大家好， 我们来测试一下新的博客。
 
 早安！**午安！** `晚安`
 ## 官方文档
