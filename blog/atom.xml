@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chunleili.github.io/blog</id>
     <title>Chunlei Li Blog</title>
-    <updated>2022-09-16T00:00:00.000Z</updated>
+    <updated>2022-09-18T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chunleili.github.io/blog"/>
     <subtitle>Chunlei Li Blog</subtitle>
+    <entry>
+        <title type="html"><![CDATA[第三章 守恒公式]]></title>
+        <id>/2022/09/18/understandingViscoelasticity读书笔记</id>
+        <link href="https://chunleili.github.io/blog/2022/09/18/understandingViscoelasticity读书笔记"/>
+        <updated>2022-09-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[欧拉视角与拉格朗日视角加速度公式有区别的原因在于：]]></summary>
+        <content type="html"><![CDATA[<p>欧拉视角与拉格朗日视角加速度公式有区别的原因在于：
+拉格朗日视角中的位置X为初始位置，与时间无关。而欧拉视角中的当前位置x与时间有关，所以要用链式法则求导。</p><p>这是欧拉视角的加速度公式（左边是向量形式，右边写成张量形式）
+<img loading="lazy" src="/assets/images/2022-09-18-09-59-26-03b5ef7f5355bb25cb81a45a329744bc.png" width="1341" height="283" class="img_ev3q"></p><p>如下为拉格朗日视角的加速度公式
+<img loading="lazy" src="/assets/images/2022-09-18-09-56-52-766f642a1e9158fb1ed20b3132a703b6.png" width="1266" height="472" class="img_ev3q"></p><p>其中我们定义L为速度梯度张量（注意转置）
+<img loading="lazy" src="/assets/images/2022-09-18-10-00-35-f13ba23a3c2c57b3238b87cc6f3315a4.png" width="1250" height="253" class="img_ev3q"></p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[VS Code中写mardown直接粘贴图片的神器]]></title>
         <id>paste-image</id>
