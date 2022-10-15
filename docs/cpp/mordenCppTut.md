@@ -18,10 +18,10 @@ add_executable(a main.cpp)
 CMake变体选择Debug 编译器VS2019-amd64
 
 @[toc]
-# constexpr
+## constexpr
 
 constexpr将表达式在编译器就计算好，从而运行时为一个常量。这就使得可以指定变量作为数组大小。
-## 用法1：指定数组大小
+### 用法1：指定数组大小
 ```cpp
 #include <iostream>
 
@@ -37,7 +37,7 @@ int main() {
 
 去掉constexpr 关键字，在g++8.1上仍然通过，但是在msvc 2019上不通过。原因是g++将其自动优化了。
 
-## 用法2：分支预测
+### 用法2：分支预测
 可以用来预测参数的类型，在模板中有用。
 
 ```cpp
@@ -61,7 +61,7 @@ int main() {
 std::is_same<decltype(n), int>::value
 用法是，先用decltype判断类型，然后用is_same判断类型是否相等。
 
-## 用法3：constexpr返回值的函数
+### 用法3：constexpr返回值的函数
 
 ```cpp
 #include<iostream>
@@ -79,10 +79,10 @@ int main(){
 ```
 返回值不仅可以是constexpr，而且该函数还能递归。最后返还的值，可以作为数组大小。
 
-# auto
+## auto
 auto是个语法糖，用来自动推断类型。
 
-## 自动推导类型
+### 自动推导类型
 
 最简单的用法是这样：推导简单的类型
 ```cpp
@@ -110,7 +110,7 @@ int main(){
     auto pa = new A();
 }
 ```
-## 简化迭代器、智能指针等冗长写法
+### 简化迭代器、智能指针等冗长写法
 简化迭代器冗长写法
 
 ```cpp
@@ -124,7 +124,7 @@ int main(){
         std::cout<<*it<<std::endl;
 }
 ```
-std::vector<int>::const_iterator被简化为了auto
+`std::vector<int>::const_iterator`被简化为了auto
 
 
 
@@ -141,7 +141,7 @@ int main(){
 ```
 
 
-## atuo推导函数返回值
+### atuo推导函数返回值
 
 ```cpp
 #include<iostream>
@@ -154,7 +154,7 @@ int main(){
     std::cout<<add(3,3.3)<<std::endl;//自动推导为double型
 }
 ```
-## 非类型模板参数推导
+### 非类型模板参数推导
 一般来说，在模板中给的typename xxx是个类型，比如int, double之类的。但其实我们还可以直接传递一个具体的参数，比如100。
 
 ```cpp
@@ -180,7 +180,7 @@ buffer_t<int, 100> buf; // 100 作为模板参数
 
 
 
-# range for
+## range for
 
 也是个语法糖，相当于不用定义迭代器了，直接在某个列表内循环（类似于python 的for i in List)
 
@@ -216,10 +216,10 @@ int main() {
 
 
 
-# tuple
+## tuple
 也是个语法糖。和python里面的元组类似。
 注：需要c++17
-## 函数返回元组以实现多个返回值
+### 函数返回元组以实现多个返回值
 ```cpp
 #include <iostream>
 #include <tuple>
@@ -239,8 +239,8 @@ int main() {
 越来越像python了...
 
 
-# using
-## using做别名替代typedef
+## using
+### using做别名替代typedef
 原本用typedef yyy xxx的地方都可以换成using xxx = yyy
 这样的好处是更加清晰。因为在typedef一个函数对象的时候，会造成心智负担。比如
 
@@ -256,8 +256,8 @@ using NewProcess = int(*)(void *);
 
 
 
-# 面向对象
-## 委托构造
+## 面向对象
+### 委托构造
 这是个语法糖。
 在写构造函数的时候，往往要重载多个版本。为了让功能一致的部分能够复用，可以采用委托构造。
 
@@ -305,7 +305,7 @@ in the second constructor
 
 
 
-## 继承构造
+### 继承构造
 这也是个语法糖。
 
 父类有多个版本的构造函数的时候，子类也必须一一对应着写多个版本，这很麻烦。
@@ -393,8 +393,8 @@ int main() {
     std::cout << s.value3 << std::endl;
 }
 ```
-## overide和final
-### overide
+### overide和final
+#### overide
 这也是语法糖。
 
 在以前，只需要在父类指定virtual就表示该函数要在子类中被重写。
@@ -418,10 +418,10 @@ struct SubClass: Base {
 使用“override”声明的成员函数不能重写基类成员C/C++(1455)
 ```
 
-### final
+#### final
 也是语法糖
 它有两个用法
-#### 保证类不再被继承
+##### 保证类不再被继承
 
 ```cpp
 struct Base {
@@ -440,7 +440,7 @@ int main() {
 error C3246: “SubSubClass”: 无法从“SubClass”继承，因为它已被声明为“final”
 ```
 
-#### 保证虚函数不再被重写
+##### 保证虚函数不再被重写
 
 ```cpp
 struct Base {
@@ -461,7 +461,7 @@ int main() {
 error C3248: “Base::func”: 声明为“final”的函数无法被“SubClass::func”重写 
 ```
 
-## =delete
+### =delete
 这是语法糖，用来
 禁用默认赋值构造函数和默认拷贝构造函数。
 
@@ -489,11 +489,11 @@ error C2280: “Magic &Magic::operator =(const Magic &)”: 尝试引用已删�
 ```
 
 
-# Lambda表达式
+## Lambda表达式
 这个是重中之重。
 其实也可以看作一种语法糖，就是在原地定义了一个函数对象。
 
-## 用lambda替代函数
+### 用lambda替代函数
 最简单的一个例子
 
 ```cpp
@@ -517,14 +517,14 @@ int main()
 ```
 
 
-## 用lambda捕获外部变量
+### 用lambda捕获外部变量
 如果只是单纯的把原本的函数换了个写法，这没什么的。lambda表达式的一个精髓在于它可以捕获外部变量。
 
 关键就在于[]。
 
 分两种捕获：值捕获和引用捕获
 
-### 值捕获
+#### 值捕获
 
 ```cpp
 #include <iostream>
@@ -540,7 +540,7 @@ int main() {
 打印结果
 1
 
-### 引用捕获
+#### 引用捕获
 
 ```cpp
 #include <iostream>
@@ -556,7 +556,7 @@ int main() {
 打印结果
 2
 
-### 自动捕获
+#### 自动捕获
 可以省略value，直接写成[=]或者是[&]，前者是值捕获，后者是引用捕获。
 值捕获
 ```cpp
@@ -589,7 +589,7 @@ int main() {
 打印结果
 2
 
-### 为捕获的参数赋予默认值
+#### 为捕获的参数赋予默认值
 
 ```cpp
 #include <iostream>
@@ -618,8 +618,8 @@ int main() {
 ```
 输出21
 
-# 函数对象包装器
-##  std::function
+## 函数对象包装器
+###  std::function
 在现代编程语言中，可以像函数一样调用的对象不止有函数，还有仿函数（类中重载operator ()），lambda表达式等。这被称为是闭包类型。因此他们被统称为可调用对象（callable）。我们可以传递一个可调用对象，将其作为其他函数的参数。一种传统的做法就是传递函数指针。
 
 既然函数指针能够传递，lambda表达式就也能够。例如
@@ -680,7 +680,7 @@ int main() {
 this is outerFunc
 I am callable! And the value is: 1
 
-## std::bind和std::placeholder
+### std::bind和std::placeholder
 
 在我们调用函数的时候，需要一个一个地写出实参来调用。假如这时候有一个参数是我目前不知道的，但是后面会知道，那么我可以提前留一个空，等后面再填写。这就是std::bind和std::placeholder的用法。这两者几乎总是一起使用。前者将函数对象与目前已知的参数绑定在一起，后者则是参数的占位符，等后面调用的时候再填写。
 
@@ -733,7 +733,7 @@ tuple index out of bounds [E:\learn\cppModernCppTut\build\a.vcxproj]
 auto newFunc = std::bind(func, 1, std::placeholders::_1, 'a');
 
 
-# 右值引用
+## 右值引用
 右值引用是核心中的核心，是重点内容。
 
 左右之分最早源于赋值号（也就是等于号）两边。
@@ -746,7 +746,7 @@ C++11将右值进一步划分为：纯右值和将亡值。
 表达式计算的临时返回值，函数的返回值，字面量都是右值。
 
 
-## 纯右值
+### 纯右值
 纯右值就是字面量或者相当于字面量的的对象。例如表达式计算的临时结果（如1+2的结果），lambda表达式（lambda表达式也是一种表达式），字面量（如10, 'a', true).
 
 这里有个常见的误区，认为字符串也是像字符一样的右值。实际上，字符串是一个左值，它属于const char 数组类型（注意数组的大小也是类型之一）
@@ -774,7 +774,7 @@ char const [5]
 
 输出数组大小为5是因为字符串“adsf”含有4个字符，并且字符串自动会在后面添加一个结束符\0。
 
-## 将亡值
+### 将亡值
 C++引入右值引用之后，出现了将亡值的概念。它将原本即将消亡的右值强行赋予一个名字，从而延长了它的生命周期。
 
 右值引用的一个作用是防止函数返回时候产生大量的拷贝。
@@ -812,7 +812,7 @@ int main() {
 虽然写法不变，但是实际上发生的不再是拷贝7个vecotr值，而是直接将func内部的vec生命周期延长，然后将其所有权转交给外部的val。
 
 
-## 移动语义std::move
+### 移动语义std::move
 std::move可以将任何引用类型（左值引用或者右值引用）转换为右值引用。它只不过是个强制类型转化而已。
 
 从功能上看，std::move就是将对象的所有权传递给别人。也就是说，当move以后，原本的对象就不再有任何资源了，资源被转移给了别人。
@@ -840,7 +840,7 @@ After move, str is ""
 
 第二种写法中，push_back的是右值引用，也就是将所有权转移给了v，因此原本的str的资源就为空了。
 
-## 移动构造函数
+### 移动构造函数
 ```cpp
 #include <iostream>
 class A {
@@ -968,7 +968,7 @@ obj: 456
 
 即：同时存在拷贝构造和移动构造的时候，函数返回对象的时候优先触发移动构造，而不是拷贝构造。
 
-## 引用坍缩规则
+### 引用坍缩规则
 传统的C++中不允许对引用继续引用。
 
 但是在现代C++中，可以对引用继续使用引用。
