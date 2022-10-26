@@ -1,6 +1,6 @@
 # 在SPlisHSPlaSH中获取鼠标位置
-
-需求： 我希望当鼠标点击的时候，获取鼠标位置，然后传出一个三维坐标(x,y,z)。
+## 获取世界坐标
+需求： 我希望当鼠标点击的时候，获取鼠标位置，然后传出一个**三维世界坐标**(x,y,z)。
 
 我们只需要找到相应的变量即可。splishsplash的默认gui是imgui。它的实现位于`Simulator\GUI\imgui\Simulator_GUI_imgui.cpp`。它实现的类就叫做Simulator_GUI_imgui
 
@@ -40,4 +40,24 @@ gui->m_oldMousePos: (0.015165   ,2.968639       ,7.893096)
 因此总结：
 在`Simulator\GUI\imgui\Simulator_GUI_imgui.cpp`获取gui->m_oldMousePos这个变量，这个变量必定会被selection函数所调用。
 
-这个变量就是世界坐标！
+这个变量就是世界坐标！并且，仅当鼠标点击的时候，才会调用selection！
+
+
+
+## 题外话：屏幕空间坐标
+我们同样可以获得屏幕空间坐标，位于
+`GUI\OpenGL\MiniGL.cpp`
+```
+void MiniGL::mousePress(GLFWwindow* window, int button, int action, int mods)
+{
+	//TODO: get mouse in screen space
+	printf("x:%f\t",mouse_pos_x_old);
+	...
+}
+```
+同样是点击才会获取
+
+结果为：
+```
+x:969.000000    y:293.000000
+```
