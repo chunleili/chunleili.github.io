@@ -30,3 +30,9 @@
 [刚体模拟的一个博客](https://www.toptal.com/game/video-game-physics-part-i-an-introduction-to-rigid-body-dynamics)
 
 [python的四元数库](https://quaternion.readthedocs.io/en/latest/)
+
+
+## 一些github开源库
+为增强可塑性而重构
+
+https://github.com/platisd/refactoring-for-testability-cpp
