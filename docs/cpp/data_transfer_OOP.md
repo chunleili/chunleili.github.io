@@ -95,4 +95,63 @@ Now the lucky number becomes 888
 
 这是因为静态函数不知晓this指针，也就是说静态函数不知晓当前具体的对象a是谁。
 
-TODO
+
+那么我们先得让静态方法能够访问非静态数据。
+
+这需要在调用的时候，传递当前对象的指针即可。这个指针就相当于是this指针。
+
+main.cpp中
+```cpp
+    A* ptr = new A();
+    ptr->a_func_must_be_called(ptr);
+```
+
+
+其次，我们要让静态函数接收这个指针。
+
+最后，**定义一个B的单例函数（自由函数即可）**，并在A中使用这个函数来获取一个**全局的静态B对象**。
+A.h
+```cpp
+#pragma once
+#include "B.h" //包含B的头文件，让A知晓类B的存在。
+
+static B get_b_instance()
+{
+	static B singleton;
+	return singleton;
+}
+
+struct A
+{
+    int data = 666 ;//the data I want to transfer
+    //... other lengthy codes already have
+
+    void static a_func_must_be_called(A* ptr)
+    {
+        get_b_instance().do_something_with_transfered_data(ptr->data);
+    }
+
+};
+```
+
+B.h
+```cpp
+#pragma once
+#include<cstdio>
+struct B
+{
+    int data;
+    void do_something_with_transfered_data(int data_from_a)
+    {
+        printf("I got lucky number from A! It is: %d\n", data_from_a);
+        this->data = data_from_a + 222;
+        printf("Now the lucky number becomes %d", this->data);
+    }
+};
+```
+
+最终结果
+```
+I got lucky number from A! It is: 666
+Now the lucky number becomes 888
+```
