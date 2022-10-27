@@ -116,7 +116,7 @@ A.h
 #pragma once
 #include "B.h" //包含B的头文件，让A知晓类B的存在。
 
-static B get_b_instance()
+static B& get_b_instance()
 {
 	static B singleton;
 	return singleton;
