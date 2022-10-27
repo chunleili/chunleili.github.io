@@ -61,3 +61,43 @@ void MiniGL::mousePress(GLFWwindow* window, int button, int action, int mods)
 ```
 x:969.000000    y:293.000000
 ```
+
+
+## 在MinGL中获取世界坐标(OpenGL通用)
+另一个获取世界坐标的通用方法是使用函数gluUnProject
+
+这个函数的用法可以在`GUI\OpenGL\MiniGL.cpp`的unproject函数找到
+
+打印出来的就是当前鼠标的位置（m_oldMousePos打印的其实是上一次点击的位置）
+![image](https://user-images.githubusercontent.com/48758868/198176576-ede534f3-5d4d-44ae-97fb-8207a61e9db4.png)
+
+我们借此可以学习一下gluUnProject的使用方法
+```
+void MiniGL::unproject(const int x, const int y, Vector3r &pos)
+{
+	GLint viewport[4];
+	GLdouble mv[16], pm[16];
+	glGetIntegerv(GL_VIEWPORT, viewport);
+	glGetDoublev(GL_MODELVIEW_MATRIX, mv);
+	glGetDoublev(GL_PROJECTION_MATRIX, pm);
+
+	GLdouble resx, resy, resz;
+	gluUnProject(x, viewport[3] - y, znear, mv, pm, viewport, &resx, &resy, &resz);
+	pos[0] = (Real) resx;
+	pos[1] = (Real) resy;
+	pos[2] = (Real) resz;
+
+	printf("current world pos:(%.4f,\t%.4f,\t%.4f)\n",pos[0],pos[1],pos[2]);
+}
+```
+这个函数的9个参数依次为
+屏幕空间x坐标，屏幕空间y坐标，znear，modelview矩阵，projection矩阵，视口，3个世界坐标返回值
+
+(viewport[3] - y 是为因为viewport存储值依次为视口左下角x,视口左下角y, 视口宽度, 视口高度, 而这里要把零点从左下角转换到左上角)
+
+![获取鼠标位置](https://user-images.githubusercontent.com/48758868/198177981-01df083b-3c9d-4adc-bfb7-276600469266.gif)
+
+
+## 对应视频讲解
+
+https://www.bilibili.com/video/BV11G4y187Qz/
