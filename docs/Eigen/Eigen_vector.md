@@ -100,4 +100,28 @@ output
 0 0 0
 ```
 
+### 两点距离
+使用.norm()方法可以计算两个点的距离。
+```
+    vec3f distVec = pos_in[1] - pos_in2[1];
+    float dist = distVec.norm();
+    std::cout<<distVec<<std::endl;
+    std::cout<<dist<<std::endl;
+```
+
+其中
+```
+    pos_in[0] = vec3f {1,2,3};
+    pos_in[1] = vec3f {1.1,4,5};
+
+    pos_in2[0] = vec3f {2,2,3};
+    pos_in2[1] = vec3f {2.1,5,5};
+```
+
+output
+```
+-1 -1  0
+1.41421
+```
+
 
