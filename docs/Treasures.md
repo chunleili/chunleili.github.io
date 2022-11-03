@@ -3,15 +3,13 @@
 
 ## 教程类
 
-[cmake菜谱](https://www.bookstack.cn/read/CMake-Cookbook/content-preface-preface-chinese.md)
+[SIGGRAPH历年仿真论文](http://www.physicsbasedanimation.com/)
+
+[连续介质力学入门](https://www.continuummechanics.org/)
 
 [极简的ctest学习博客](https://matgomes.com/cmake-ctest-to-add-cpp-tests/)
 
-[SIGGRAPH历年仿真论文](http://www.physicsbasedanimation.com/)
-
 [learn-opengl](https://learnopengl-cn.github.io/)
-
-[连续介质力学入门](https://www.continuummechanics.org/)
 
 [便宜的CG资源:cgtrader](https://www.cgtrader.com/)
 
@@ -21,31 +19,19 @@
 
 [zeno文档](http://doc.zenustech.com/)
 
-[书籍:游戏编程模式](https://gpp.tkchu.me/)
-
-[可交互的Shader学习:The Book of Shader](https://thebookofshaders.com/?lan=ch)
-
 [1997年SIGGRAPH刚体模拟Course:Witkin&Baraff](http://www.cs.cmu.edu/~baraff/sigcourse/index.html)
 
 [刚体模拟的一个博客](https://www.toptal.com/game/video-game-physics-part-i-an-introduction-to-rigid-body-dynamics)
 
 [python的四元数库](https://quaternion.readthedocs.io/en/latest/)
 
-[Rust程序设计语言](https://kaisery.github.io/trpl-zh-cn/title-page.html)
-
-[现代C++教程:高速上手](https://changkun.de/modern-cpp/zh-cn/00-preface/)
-
 [谷歌C++风格指南](https://zh-google-styleguide.readthedocs.io/en/latest/contents/)
 
 [Godot(开源游戏引擎)入门](https://docs.godotengine.org/en/stable/getting_started/introduction/first_look_at_the_editor.html)
 
-[星球渲染](https://www.solarsystemscope.com/textures/)
-
-[用python自动化无聊的工作](https://automatetheboringstuff.com/)
+[星球渲染纹理资源](https://www.solarsystemscope.com/textures/)
 
 [python3菜谱](https://python3-cookbook.readthedocs.io/zh_CN/latest/index.html)
-
-[游戏编程设计模式](https://gameprogrammingpatterns.com/)
 
 [pybind11文档](https://pybind11.readthedocs.io/en/stable/index.html)
 
@@ -56,7 +42,6 @@
 [openvdb菜谱(官方)](https://www.openvdb.org/documentation/doxygen/codeExamples.html#sHelloWorld)
 
 [OpenMP文档](https://cliutils.gitlab.io/modern-cmake/chapters/packages/OpenMP.html)
-
 
 [重构你的cpp程序以增强可测性](https://github.com/platisd/refactoring-for-testability-cpp)
 
@@ -80,3 +65,20 @@
 [CS344: NVIDIA UDACITY的并行入门课](https://developer.nvidia.com/udacity-cs344-intro-parallel-programming)
 
 [汪洋的OpenFOAM课程ppt](https://github.com/wo315/2206CFD_OpenFOAM)
+
+## 书籍类
+[游戏编程设计模式](https://gameprogrammingpatterns.com/)
+
+[cmake菜谱(系统学习cmake最好的书)](https://www.bookstack.cn/read/CMake-Cookbook/content-preface-preface-chinese.md)
+
+[用python自动化无聊的工作](https://automatetheboringstuff.com/)
+
+[Rust程序设计语言](https://kaisery.github.io/trpl-zh-cn/title-page.html)
+
+[现代C++教程:高速上手(快速了解modern c++)](https://changkun.de/modern-cpp/zh-cn/00-preface/)
+
+[书籍:游戏编程模式](https://gpp.tkchu.me/)
+
+[可交互的Shader学习:The Book of Shader](https://thebookofshaders.com/?lan=ch)
+
+[GPU Gems(图形学大部头经典)](https://developer.nvidia.com/gpugems/gpugems/contributors)
