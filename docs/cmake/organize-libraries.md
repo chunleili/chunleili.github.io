@@ -4,7 +4,7 @@
 内容参考自 [cmake菜谱](https://www.bookstack.cn/read/CMake-Cookbook/content-chapter7-7.7-chinese.md)
 
 
-请从 [这里下载源码](https://github.com/dev-cafe/cmake-cookbook/tree/v1.0/chapter-7/recipe-07) 
+请从 [这里下载源码](https://github.com/dev-cafe/cmake-cookbook/tree/master/chapter-07/recipe-07) 
 
 假如你有一个稍微大一点的项目，那么就需要引用许多外部库。同时，你还有许多自己写的内部库。最后，你把他们都链接到自己的可执行文件上。
 
@@ -20,9 +20,7 @@
 
 ### 项目结构
 
-为了更好的说明，我们采用了如下的[项目源码](https://github.com/dev-cafe/cmake-cookbook/tree/v1.0/chapter-7/recipe-07 ).
-
-我们把所有的CMakeLists.txt文件都清理干净，然后从头开始写。
+为了更好的说明，我们把所有的CMakeLists.txt文件都清理干净，然后从头开始写。
 
 目录如下
 ```
