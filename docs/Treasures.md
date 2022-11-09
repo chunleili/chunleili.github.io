@@ -11,12 +11,6 @@
 
 [learn-opengl](https://learnopengl-cn.github.io/)
 
-[便宜的CG资源:cgtrader](https://www.cgtrader.com/)
-
-[免费HDR和纹理:polyhaven](https://polyhaven.com/)
-
-[c语言稀疏线性求解器库](https://www.tau.ac.il/~stoledo/taucs/)
-
 [zeno文档](http://doc.zenustech.com/)
 
 [1997年SIGGRAPH刚体模拟Course:Witkin&Baraff](http://www.cs.cmu.edu/~baraff/sigcourse/index.html)
@@ -28,8 +22,6 @@
 [谷歌C++风格指南](https://zh-google-styleguide.readthedocs.io/en/latest/contents/)
 
 [Godot(开源游戏引擎)入门](https://docs.godotengine.org/en/stable/getting_started/introduction/first_look_at_the_editor.html)
-
-[星球渲染纹理资源](https://www.solarsystemscope.com/textures/)
 
 [python3菜谱](https://python3-cookbook.readthedocs.io/zh_CN/latest/index.html)
 
@@ -67,9 +59,12 @@
 [汪洋的OpenFOAM课程ppt](https://github.com/wo315/2206CFD_OpenFOAM)
 
 ## 书籍类
-[游戏编程设计模式](https://gameprogrammingpatterns.com/)
 
 [cmake菜谱(系统学习cmake最好的书)](https://www.bookstack.cn/read/CMake-Cookbook/content-preface-preface-chinese.md)
+
+[Professional cmake](https://crascit.com/professional-cmake/)
+
+[游戏编程设计模式](https://gameprogrammingpatterns.com/)
 
 [用python自动化无聊的工作](https://automatetheboringstuff.com/)
 
@@ -82,3 +77,15 @@
 [可交互的Shader学习:The Book of Shader](https://thebookofshaders.com/?lan=ch)
 
 [GPU Gems(图形学大部头经典)](https://developer.nvidia.com/gpugems/gpugems/contributors)
+
+## 资源类
+
+[便宜的CG资源:cgtrader](https://www.cgtrader.com/)
+
+[免费HDR和纹理:polyhaven](https://polyhaven.com/)
+
+[c语言稀疏线性求解器库](https://www.tau.ac.il/~stoledo/taucs/)
+
+[星球渲染纹理资源](https://www.solarsystemscope.com/textures/)
+
+[生成好看的配色:coolors](https://coolors.co/)
