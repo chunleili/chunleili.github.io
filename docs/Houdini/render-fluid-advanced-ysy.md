@@ -1,5 +1,20 @@
 # Houdini渲染流体（进阶版）--ysy
 
+工程文件：
+
+链接：https://pan.baidu.com/s/1eneV39-jC2N197P4etzDsA 
+提取码：xzn7 
+
+或者
+
+链接: https://pan.baidu.com/s/1d-YoI8htr7QtkMm4qbIBtw?pwd=mt5w 
+提取码: mt5w 
+
+
+最终效果
+![在这里插入图片描述](https://img-blog.csdnimg.cn/d1de95eb21b447a78f4d9aec6a86def1.png)
+
+
 2022-11-10
 To be finished
 
