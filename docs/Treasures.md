@@ -62,6 +62,8 @@
 
 [cmake菜谱(系统学习cmake最好的书)](https://www.bookstack.cn/read/CMake-Cookbook/content-preface-preface-chinese.md)
 
+[modern cmake中文版](https://modern-cmake-cn.github.io/Modern-CMake-zh_CN/)
+
 [Professional cmake](https://crascit.com/professional-cmake/)
 
 [游戏编程设计模式](https://gameprogrammingpatterns.com/)
