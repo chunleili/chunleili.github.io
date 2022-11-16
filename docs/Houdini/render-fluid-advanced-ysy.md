@@ -199,3 +199,90 @@ erode
 
 ![请添加图片描述](https://img-blog.csdnimg.cn/048e32f667034a7c9c0541a3005b3876.png)
 
+
+
+
+
+
+## 要安装的插件
+安装配置Houdini 19.5.403
+以下需要下载的文件可以在百度网盘下载（Houdini，redshift，Solaris，OCIO）：
+链接：https://pan.baidu.com/s/1_J8zMDLJgPrufD7nJXDwiA 
+提取码：1234
+
+1.下载Houdini19.5.403
+https://www.sidefx.com/download/
+2.查找安装的houdini对应的rs版本号
+https://docs.redshift3d.com/display/RSDOCS/Houdini+Plugin+Configuration
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/a570e48f4ed8462b93e25a8ea3c1bf57.png)
+
+在Maxon 软件上下载对应版本的redshift或者去官网下载。
+在maxon官网安装maxon，其中redshift需要版权，申请学生认证购买。
+3.由于安装的Houdini19.5.403在官网没有对应最新版的redshift，前往论坛下载最新的redshift和Solaris：
+https://redshift.maxon.net/topic/31230/houdini-solaris-plugins-custom-builds
+解压以后改成对应版本，OUT放到houdini文件夹下面，stage那个压缩包则是放到Solaris下面，然后文件名也是一样的版本号。
+ 
+![在这里插入图片描述](https://img-blog.csdnimg.cn/dd058e692fab40adbdd4c95cf4282477.png)
+
+4,找到houdini的env文件，用记事本打开
+一般在C:\Users\Administrator\Documents\houdinixxx（linux在~/houdinixxx）
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/07488bde8c58463bb30fba3e0ac43127.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/47752a8a8f3648d08f214d4dd56d366e.png)
+
+ 
+添加如下：
+HOUDINI_PATH = "/usr/redshift/redshift4houdini/${HOUDINI_VERSION};&"
+PXR_PLUGINPATH_NAME = "/usr/redshift/redshift4solaris/${HOUDINI_VERSION}"
+OCIO="/home/lj/Downloads/houdini19.0.383/RedshiftOCIOConfigs-main/redshift-custom-config/config.ocio"
+HOUDINI_NVIDIA_OPTIX_DSO_PATH="/home/lj/Pictures/optix"
+
+其中OCIO在官网或网盘下载
+5.打开houdini，菜单edit-references-rendering 勾选redshift保存即可
+   ![在这里插入图片描述](https://img-blog.csdnimg.cn/07842f022da34fba8af4cbc0845f308e.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/4354448ea4b642b38d3db5ced4b5b80e.png)
+
+
+6.OCIO
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/eeaedaf840544f10bb9487bee9d09b5c.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/3bc515e342ce4edb98424f831d7f03be.png)
+
+ 
+Ubuntu系统卸载Houdini
+在opt/hfs19.0.383 目录下
+sudo su
+source houdini.uninstall
+
+
+## OICO 颜色管理设置
+OCIO颜色管理设置
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/dad562b4edae4820bf99d6e56755df2d.png)
+
+将渲染生成的exr图片序列输入，
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/77cb2253cc66455d838e8452517fc402.png)
+
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/b0fc18330b7b46a9b194a9aef6e8b658.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/dd1dd7ae790d4bafb1bd297f746bbca8.png)
+
+ 
+点击render输出图片颜色管理修正后的exr文件序列
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/842afa7067d742af830fd9c4c1de255a.png)
+
+## 将Exr多个图片合成视频
+1.安装Adobe_After_Effects2022。
+2.新建项目。
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/8056e5ee57294dffa2edbb5c334dc58b.png)
+
+3.导入所有Exr文件。
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/1c61306058214db6b509ba4f00cbe8f8.png)
+
+4.选中所有导入的文件，拖入下方红框内，点击确定。
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/a88f8518c19f4b69b390c5a1608318ec.png)
+
+5. 点击渲染队列，然后按Ctrl+M。
+ ![在这里插入图片描述](https://img-blog.csdnimg.cn/1c751d265d4e499486d46c37dffaedc7.png)
+
+6.设置输出参数后点击渲染即可得到视频文件。
+ 
+![在这里插入图片描述](https://img-blog.csdnimg.cn/4a19ddf5be93403e91828c6fc6371602.png)
+
+
