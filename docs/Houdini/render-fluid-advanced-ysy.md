@@ -22,6 +22,8 @@ Learn from ysy
 
 The corresponding [csdn blog](https://blog.csdn.net/weixin_43940314/article/details/127785069?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22127785069%22%2C%22source%22%3A%22weixin_43940314%22%7D) 
 
+## 渲染流程
+
 ### 1 文件导入
 
 利用file导入原始文件，利用rop geometry保存成bgeo.sc加快读取速度
@@ -90,14 +92,14 @@ erode
 
 
 
-### 4 attribute wrangle增加速度大小
+### 5 attribute wrangle增加速度大小
 
 增加属性speed
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/b27787b3924f43e2847d5c27d5a798ee.png)
 
 
 
-## Stage
+## 6 Stage
 
 切换到stage窗口
 
