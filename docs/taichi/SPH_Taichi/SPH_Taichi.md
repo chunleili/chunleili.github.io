@@ -1,4 +1,4 @@
-# 【taichi】关于SPH_Taichi的探索与尝试
+# 关于SPH_Taichi的探索与尝试
 这是太极实习生张铭睿同学做的SPH太极库。请看
 
 https://www.bilibili.com/video/BV1mg411y7i9?p=10&vd_source=e15eb8f98a9dde1c9cc874314025b575
@@ -15,3 +15,8 @@ https://www.bilibili.com/video/BV1mg411y7i9?p=10&vd_source=e15eb8f98a9dde1c9cc87
 pyglet==1.5.27
 ```
 
+
+## 测试体素化
+[voxelize](./voxelize.md)
+## 测试读取json
+[voxelize](./read-json.md)
