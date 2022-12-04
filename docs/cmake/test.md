@@ -9,7 +9,18 @@ enable_testing()
 add_subdirectory(tests)
 ```
 
+被测试的源码为
 
+test.cpp
+```cpp
+#define CATCH_CONFIG_MAIN
+#include "catch.hpp"
+TEST_CASE("case1", "subcase1") {
+  int actual = 1
+  int expected = 1;
+  REQUIRE(actual == expected);
+}
+```
 
 
 我们采用catch2这个测试框架。你可以从[这里找到catch2源码](https://raw.githubusercontent.com/catchorg/Catch2/v2.x/single_include/catch2/catch.hpp)
