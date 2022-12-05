@@ -4,15 +4,18 @@
 工程文件：
 
 链接：https://pan.baidu.com/s/1eneV39-jC2N197P4etzDsA 
+
 提取码：xzn7 
 
 或者
 
 链接: https://pan.baidu.com/s/1d-YoI8htr7QtkMm4qbIBtw?pwd=mt5w 
+
 提取码: mt5w 
 
 
 最终效果
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/d1de95eb21b447a78f4d9aec6a86def1.png)
 
 
@@ -30,19 +33,13 @@ The corresponding [csdn blog](https://blog.csdn.net/weixin_43940314/article/deta
 利用file导入原始文件，利用rop geometry保存成bgeo.sc加快读取速度
 
 
-
 ![请添加图片描述](https://img-blog.csdnimg.cn/87f92a5eadca4263957b5d91d72c2806.png)
-
-
 
 ### 2 split
 
 只分出流体部分
 
 ![请添加图片描述](https://img-blog.csdnimg.cn/30afe2eb7149468983c8408e7470f824.png)
-
-
-
 
 
 
@@ -54,9 +51,6 @@ The corresponding [csdn blog](https://blog.csdn.net/weixin_43940314/article/deta
 
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2af73f9887b04d3cb3b3edfc2d00d3a3.png)
-
-
-
 
 参数
 
@@ -71,9 +65,6 @@ droplet scale
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/4a058bcfbe2b4f139b326faced98516a.png)
 
 
-
-
-
 在filter面板
 
 dilate
@@ -83,14 +74,7 @@ smooth
 erode
 
 
-
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/fde7bbf940fe4d17a78196ffc16592f6.png)
-
-
-
-
-
-
 
 
 ### 5 attribute wrangle增加速度大小
@@ -104,8 +88,6 @@ erode
 
 切换到stage窗口
 
-
-
 ### 1 Geometry Sequence导入序列
 
 ### 2 SOP Import导入静止物体
@@ -118,13 +100,7 @@ erode
 ### 3 matrial library 材质
 
 
-
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/57f4c770f5db4489bfd8c166378991d4.png)
-
-
-
-
-
 
 
 #### water
@@ -146,10 +122,6 @@ erode
 
 
 ![请添加图片描述](https://img-blog.csdnimg.cn/3e722928e4e746e38bc6f6562325b884.png)
-
-
-
-
 
 
 ### 6 assign material
@@ -194,10 +166,6 @@ erode
 ![请添加图片描述](https://img-blog.csdnimg.cn/ec85c2267f1b492d8aecfe83fdd489ea.png)
 
 
-
-
-
-
 注意Denoising中开启OptiX是用GPU降噪。该功能有可能导致程序崩溃。
 
 ![请添加图片描述](https://img-blog.csdnimg.cn/048e32f667034a7c9c0541a3005b3876.png)
@@ -208,20 +176,29 @@ erode
 
 
 ## 要安装的插件
+
 安装配置Houdini 19.5.403
+
 以下需要下载的文件可以在百度网盘下载（Houdini，redshift，Solaris，OCIO）：
+
 链接：https://pan.baidu.com/s/1_J8zMDLJgPrufD7nJXDwiA 
+
 提取码：1234
 
 1.下载Houdini19.5.403
+
 https://www.sidefx.com/download/
+
 2.查找安装的houdini对应的rs版本号
+
 https://docs.redshift3d.com/display/RSDOCS/Houdini+Plugin+Configuration
 
  ![在这里插入图片描述](https://img-blog.csdnimg.cn/a570e48f4ed8462b93e25a8ea3c1bf57.png)
 
 在Maxon 软件上下载对应版本的redshift或者去官网下载。
+
 在maxon官网安装maxon，其中redshift需要版权，申请学生认证购买。
+
 3.由于安装的Houdini19.5.403在官网没有对应最新版的redshift，前往论坛下载最新的redshift和Solaris：
 
 https://redshift.maxon.net/topic/31230/houdini-solaris-plugins-custom-builds
@@ -231,6 +208,7 @@ https://redshift.maxon.net/topic/31230/houdini-solaris-plugins-custom-builds
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/dd058e692fab40adbdd4c95cf4282477.png)
 
 4,找到houdini的env文件，用记事本打开
+
 一般在C:\Users\Administrator\Documents\houdinixxx（linux在~/houdinixxx）
 
  ![在这里插入图片描述](https://img-blog.csdnimg.cn/07488bde8c58463bb30fba3e0ac43127.png)
@@ -245,6 +223,7 @@ OCIO="/home/lj/Downloads/houdini19.0.383/RedshiftOCIOConfigs-main/redshift-custo
 HOUDINI_NVIDIA_OPTIX_DSO_PATH="/home/lj/Pictures/optix"
 
 其中OCIO在官网或网盘下载
+
 5.打开houdini，菜单edit-references-rendering 勾选redshift保存即可
 
    ![在这里插入图片描述](https://img-blog.csdnimg.cn/07842f022da34fba8af4cbc0845f308e.png)
