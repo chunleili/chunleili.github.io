@@ -58,21 +58,22 @@ CMAKE_MODULE_PATH = /path/to/FindXXX.cmake
 
 这些FindXXX.cmake或者XXXConfig.cmake的路径通常第三方库的作者会放在自己项目的cmake目录下。
 
-3. 当然，官方内置了一些FindXXX.cmake和XXXConfig.cmake。这些位置也是被搜索的路径位于cmake的安装目录下，即`CMAKE_PREFIX_PATH`，例如
-
+3. 当然，官方内置了一些FindXXX.cmake和XXXConfig.cmake。这些位置也是被搜索的路径位于cmake的安装目录下，例如
 ```
 C:\Program Files\CMake\share\cmake-3.23\Modules
 ```
 
+4. 通过外界或手动设定CMAKE_PREFIX_PATH也可以指定搜索路径
 
-4. 当然，还会搜索系统的`PATH`环境变量，比如
+
+5. 当然，还会搜索系统的`PATH`环境变量，比如
 
 ```
 /usr/local/
 ```
 
 
-5. 最后你可以以如下方式指定路径
+6. 最后你可以以如下方式指定路径
 
 ```
 find_package(PackageName [PATHS path1 [path2 ... ]])
