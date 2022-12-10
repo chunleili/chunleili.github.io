@@ -39,6 +39,9 @@
 
 [游戏流体力学及Unity代码](https://github.com/clatterrr/FluidSimulationTutorialsUnity)
 
+[利用cmake配置好opengl环境](https://shot511.github.io/2018-05-29-how-to-setup-opengl-project-with-cmake/)
+
+[Houdini Vex 插件](http://cgtoolbox.com/houdini-expression-editor/)
 
 ## 课程类
 
