@@ -87,6 +87,10 @@
 
 [便宜的CG资源:cgtrader](https://www.cgtrader.com/)
 
+[CG资源turbosquid](https://www.turbosquid.com/)
+
+[CG资源sketchfab](https://sketchfab.com/)
+
 [免费HDR和纹理:polyhaven](https://polyhaven.com/)
 
 [c语言稀疏线性求解器库](https://www.tau.ac.il/~stoledo/taucs/)
