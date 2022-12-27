@@ -1,5 +1,8 @@
 # cmake打印出生成表达式(如当前的配置(Release还是Debug))
 
+本文学习自[官方文档的这一小节](https://cmake.org/cmake/help/latest/manual/cmake-buildsystem.7.html?highlight=interface#id36)
+
+
 生成表达式是在生成的的时候才会执行的，所以假如简单的采用
 
 ```
