@@ -5,7 +5,7 @@
 
 我们在zeno中使用断言来帮助我们debug
 
-# 提前总结
+## 提前总结
 就三种用法
 ```cpp
 //用法1：运行时assert
@@ -20,7 +20,7 @@ assert(0 && "assert here");
 
 不建议用第一种方式。因为zeno对第一种方式支持不好。
 
-#     用法1：运行时assert
+##     用法1：运行时assert
 假如要用assert需要加入这两行
 ```cpp
 #undef NDEBUG//先去掉NDEBUG宏让断言发挥作用
@@ -41,7 +41,7 @@ zeno可运行，且无任何输出信息
 
 （这也是为什么不建议用这种方式）
 
-#     用法2：static_assert
+##     用法2：static_assert
 
 ```cpp
     //用法2：静态static_assert
@@ -52,7 +52,7 @@ zeno可运行，且无任何输出信息
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/9ec9c4f246384d168c0c426a2a3e42de.png)
 这个可以用在检查编译时的类型等错误。
 
-# 用法3：
+## 用法3：
 
 ```cpp
 //用法3：throw运行时异常
