@@ -1,4 +1,4 @@
-利用 ExternalProject_Add 解决第三方库target命名冲突问题
+# 利用ExternalProject_Add解决第三方库target命名冲突问题
 
 参考
 [cmake菜谱第八章第一节](https://www.bookstack.cn/read/CMake-Cookbook/content-chapter8-8.1-chinese.md)
@@ -188,5 +188,82 @@ unset(BINARY_DIR)
 
 为B和C编写install命令
 
-TODO
+```
+cmake_minimum_required(VERSION 3.23)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+project(A)
+
+add_executable(A src/main.cpp)
+
+# 直接add_subdirectory会导致target冲突
+# add_subdirectory(extern/B)
+# add_subdirectory(extern/C)
+
+# 使用ExternalProject可以解决target冲突问题
+include(ExternalProject)
+set_property(DIRECTORY PROPERTY EP_BASE ${CMAKE_BINARY_DIR}/ExternalProject)
+
+set(EXT_INALL_DIR ${CMAKE_BINARY_DIR}/ExternalProject/Install)
+message(STATUS "EXT_INALL_DIR: ${EXT_INALL_DIR}")
+
+ExternalProject_Add(External_C
+  SOURCE_DIR
+    ${CMAKE_CURRENT_LIST_DIR}/extern/C
+  CMAKE_ARGS
+    -DCMAKE_CXX_STANDARD=${CMAKE_CXX_STANDARD}
+    -DCMAKE_CXX_FLAGS=${CMAKE_CXX_FLAGS}
+    -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}
+    -DCMAKE_INSTALL_PREFIX:PATH=${EXT_INALL_DIR}/External_C 
+  )
+
+ExternalProject_Add(External_B
+  SOURCE_DIR
+    ${CMAKE_CURRENT_LIST_DIR}/extern/B
+  CMAKE_ARGS
+    -DCMAKE_CXX_STANDARD=${CMAKE_CXX_STANDARD}
+    -DCMAKE_CXX_FLAGS=${CMAKE_CXX_FLAGS}
+    -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}
+    -DCMAKE_INSTALL_PREFIX:PATH=${EXT_INALL_DIR}/External_B 
+  )
+
+# 方案1(INSTALL_COMMAND "")
+# ExternalProject_Get_Property(External_B BINARY_DIR )
+# message(STATUS "BINARY_DIR: ${BINARY_DIR}")
+# target_link_libraries(A PRIVATE
+# ${BINARY_DIR}/$<CONFIG>/Blib.lib
+# )
+# unset(BINARY_DIR)
+
+
+# # 方案2
+# 可以直接链接并include
+ExternalProject_Get_Property(External_B INSTALL_DIR)
+set(BLIB_INCLUDE_DIR ${INSTALL_DIR}/include)
+set(BLIB_LIBRARIES ${INSTALL_DIR}/lib/Blib.lib)
+unset(INSTALL_DIR)
+# target_link_libraries(A PRIVATE
+#   ${BLIB_LIBRARIES}
+# )
+# target_include_directories(A PUBLIC
+#   ${BLIB_INCLUDE_DIR}
+# )
+
+# 也可以先封装成一个INTERFACE库，然后链接
+add_library(External_B_to_link INTERFACE)
+target_link_libraries(External_B_to_link INTERFACE
+  ${BLIB_LIBRARIES}
+)
+target_include_directories(External_B_to_link INTERFACE
+  ${BLIB_INCLUDE_DIR}
+)
+target_link_libraries(A PRIVATE
+  External_B_to_link
+)
+add_dependencies(External_B_to_link External_B)
+
+```
 
