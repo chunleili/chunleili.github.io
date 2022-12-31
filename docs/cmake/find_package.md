@@ -1,5 +1,5 @@
 
-# 【cmake】find_package的简单用法
+# find_package的简单用法
 
 find_package是一个较为复杂的命令。详情请参考最后的参考资料。我们这里只讲最基本的简明扼要的用法和原理。
 
