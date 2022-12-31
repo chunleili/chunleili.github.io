@@ -1,4 +1,4 @@
-# 在编译结束之后拷贝库文件到指定位置
+# 在编译结束之后拷贝库文件到指定位置(add_custom_command)
 
 使用add_custom_command这个命令。
 ```
