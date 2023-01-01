@@ -93,8 +93,14 @@
 
 [免费HDR和纹理:polyhaven](https://polyhaven.com/)
 
-[c语言稀疏线性求解器库](https://www.tau.ac.il/~stoledo/taucs/)
-
 [星球渲染纹理资源](https://www.solarsystemscope.com/textures/)
 
 [生成好看的配色:coolors](https://coolors.co/)
+
+[c语言稀疏线性求解器库](https://www.tau.ac.il/~stoledo/taucs/)
+
+[线性系统求解测试数据](https://sparse.tamu.edu/)
+
+[另一个线性系统测试数据MatrixMarket](https://math.nist.gov/MatrixMarket/)
+
+[amgcl(一个支持多重网格的C++库)](https://github.com/ddemidov/amgcl)
