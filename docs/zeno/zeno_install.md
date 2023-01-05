@@ -19,7 +19,7 @@ https://github.com/zenustech/zeno/blob/master/BUILD.md
 
 3. 为系统Path变量增加路径
 ```
-D:\App\Qt5\Qt5.14.2\5.14.2\msvc2017_64\lib
+D:\App\Qt5\Qt5.14.2\5.14.2\msvc2017_64\bin
 ```
 这是为了让zeno找到Qt5的动态库，比如Qt5Core.dll之类的。你也可以手动复制到zeno的build bin下面，当然这样会麻烦一点。
 
