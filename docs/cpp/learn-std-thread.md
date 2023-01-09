@@ -250,7 +250,7 @@ int main()
 
 ## 即使是传递引用也会变成拷贝传值
 
-为了防止上述错误，C++规定：即使是传递引用，也会变成拷贝。
+为了防止上述错误，有时即使是传递引用，也会变成拷贝。（VS是如此，apple-clang则直接报错）
 
 例如
 ```c
@@ -290,6 +290,10 @@ output
 ```
 
 在上面的例子中，即使我们指定了传递引用，也会变成拷贝。所以func根本没改变node原有的值。所以最后打印出来还是1 2。
+
+apple-clang则直接会报错：`error: attempt to use a deleted function`
+
+将引用改为传值则会修正BUG.
 
 
 ## 获取线程的id
@@ -338,6 +342,8 @@ In main thread id:21680
 In func thread id:21680
 -----------------
 ```
+
+在apple-clang中则传递的是一个16进制数字。
 
 ## TODO
 mutex
