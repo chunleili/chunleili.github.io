@@ -108,4 +108,7 @@
 ## 代码库
 [taichi 2D flip](https://gitee.com/citadel2020/taichi_demos/tree/master)
 
+## 知识类
+
+[非牛顿模型](http://doc.simulationx.com/4.0/1033/Content/Libraries/NonNewtonianFluids.htm?TocPath=Libraries|Non-Newtonian%20Fluids|_____0)
 
