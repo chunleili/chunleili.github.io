@@ -4,6 +4,12 @@
 
 ## COMPILE ERROR
 
+## expected expression（mac)
+平台：苹果clang++
+
+解释：在函数中定义模板是不可以的
+
+
 ## LINK ERROR
 
 ### error LNK1104: 无法打开文件
@@ -15,3 +21,5 @@
 ```
 
 基本上就是没有结束前一次运行的结果
+
+
