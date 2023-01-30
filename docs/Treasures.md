@@ -63,6 +63,8 @@
 
 [斯坦福的凸优化CVX101](https://web.stanford.edu/~boyd/cvxbook/)
 
+[斯坦福数值优化AA222](https://aa222.stanford.edu/)
+
 
 ## 书籍类
 
