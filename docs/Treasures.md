@@ -61,6 +61,9 @@
 
 [汪洋的OpenFOAM课程ppt](https://github.com/wo315/2206CFD_OpenFOAM)
 
+[斯坦福的凸优化CVX101](https://web.stanford.edu/~boyd/cvxbook/)
+
+
 ## 书籍类
 
 [cmake菜谱(系统学习cmake最好的书)](https://www.bookstack.cn/read/CMake-Cookbook/content-preface-preface-chinese.md)
