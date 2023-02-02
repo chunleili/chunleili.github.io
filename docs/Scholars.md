@@ -207,6 +207,24 @@ XPBD和PBF的作者，在NV物理仿真组任职。physX的许多部分是他参
 研究领域：介观计算流体动力学、计算机图形学、渲染/可视化、机器学习、高性能计算、无人机
 [https://faculty.sist.shanghaitech.edu.cn/faculty/liuxp/index.htm](https://faculty.sist.shanghaitech.edu.cn/faculty/liuxp/index.htm)
 
+#### 朱永宁
+FLIP的发明人。 硕士（2003-2005）UBC 师从Bridson，博士（2005-2010）UCLA  Joseph Michael Teran和Achiezer Brandt。硕士论文就是FLIP那个sand。博士论文是Multigrid methods for solids simulation。朱老师擅长VDB、Houdini。
+
+任职：
+同济大学艺术与媒体 https://amlab.tongji.edu.cn/info/1289/1142.htm
+上海交通(?)
+
+硕士论文 https://www.cs.ubc.ca/~rbridson/docs/yzhu_msc.pdf
+硕士 slides  https://slideplayer.com/slide/7499148/
+
+https://www.genealogy.math.ndsu.nodak.edu/id.php?id=150888
+
+dblp https://dblp.org/pid/80/4435.html
+博士论文 https://www.math.ucla.edu/~jteran/student_thesis/zhu.pdf
+
+
+
+
 ## 3 工程领域学者
 由于图形学仿真与**计算力学**（包括CFD、FEM等）息息相关。并且笔者硕士就是搞CFD的。所以这里也推荐几个工程领域的学者。
 
