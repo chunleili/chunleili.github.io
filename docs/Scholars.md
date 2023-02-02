@@ -127,9 +127,14 @@ Minchen is an Assistant Adjunct Professor at UCLA Department of Mathematics, and
 
 
 #### Miles Macklin
-XPBD和PBF的作者，在NV物理仿真组任职。physX的许多部分是他参与开发的。
+XPBD和PBF的作者，在NV物理仿真组任职。physX的许多部分是他参与开发的。Muller的学生
 
 [http://blog.mmacklin.com/about/](http://blog.mmacklin.com/about/)
+
+#### Gao ming
+研究方向：SPGrid CD-MPM
+
+https://mingg13.github.io/
 
 
 ## 2 国内学者
@@ -153,6 +158,7 @@ XPBD和PBF的作者，在NV物理仿真组任职。physX的许多部分是他参
 清华大学计算机教授。1996年获得浙江大学博士。2002年获得国家杰青。北京航空航天大学和清华大学双聘教授，2018年起任北京航空航天大学虚拟现实技术与系统国家重点实验室主任。2021年8月1日，入选2021年中国科学院院士增选初步候选人名单（信息技术科学部）。
 
 研究领域：计算几何、计算机图形学、SPH...
+
 [http://cg.cs.tsinghua.edu.cn/shimin.htm](http://cg.cs.tsinghua.edu.cn/shimin.htm)
 
 #### 周昆
@@ -161,6 +167,7 @@ XPBD和PBF的作者，在NV物理仿真组任职。physX的许多部分是他参
 （PS：曾有个老师说国内图形学就两个山头：浙大帮和清华帮。浙大的CADCG实验室可以说是国内研究图形学最早的重点实验室。后面衍生出来的各个国内学者都是这两个帮走出来的......）
 
 研究领域：计算机图形学（尤其是计算几何）、计算机视觉、人机交互和虚拟现实
+
 [https://person.zju.edu.cn/kunzhou](https://person.zju.edu.cn/kunzhou)
 
 
@@ -212,14 +219,17 @@ FLIP的发明人。 硕士（2003-2005）UBC 师从Bridson，博士（2005-2010�
 
 任职：
 同济大学艺术与媒体 https://amlab.tongji.edu.cn/info/1289/1142.htm
+
 上海交通(?)
 
 硕士论文 https://www.cs.ubc.ca/~rbridson/docs/yzhu_msc.pdf
+
 硕士 slides  https://slideplayer.com/slide/7499148/
 
 https://www.genealogy.math.ndsu.nodak.edu/id.php?id=150888
 
 dblp https://dblp.org/pid/80/4435.html
+
 博士论文 https://www.math.ucla.edu/~jteran/student_thesis/zhu.pdf
 
 
