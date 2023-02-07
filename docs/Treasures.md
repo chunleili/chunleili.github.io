@@ -65,6 +65,7 @@
 
 [斯坦福数值优化AA222](https://aa222.stanford.edu/)
 
+[Sifakis SIGGRAPH 2012 Course: 图形学FEM入门](http://viterbi-web.usc.edu/~jbarbic/femdefo/)
 
 ## 书籍类
 
