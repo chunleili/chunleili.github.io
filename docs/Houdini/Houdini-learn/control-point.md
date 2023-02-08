@@ -1,5 +1,3 @@
-# Houdini输出控制点每帧的位置
-
 需求：通过对控制点的K帧得到了动画，该控制点控制vellum的运动。我们需要输出该控制点随时间变化的位置。
 
 
@@ -28,6 +26,18 @@
 然后使用delete attribute吧除了坐标以外的多余的东西删掉
 
 然后用vex将多个点平均成一个
+
+run over detail(once)
+```
+int npt = npoints(0);
+vector pos = {0,0,0};
+for(int i = 0;i < npt; i++){
+    pos += point(0, "P", i);
+    removepoint(0,i,1);
+}
+    
+addpoint(0,pos/npt);
+```
 
 为啥有多个点呢？你看一下，实际上控制点是一组点，而我们只需要一个
 
