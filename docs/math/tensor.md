@@ -17,6 +17,7 @@
 
 比如应力记号$\sigma$
 如果写成矩阵就是
+
 $$
 \mathbf{\sigma} =
 \begin{pmatrix}
@@ -25,7 +26,8 @@ $$
 \sigma_{zx} & \sigma_{zy} &\sigma_{zz} \\
 \end{pmatrix}
 $$
-![在这里插入图片描述](https://img-blog.csdnimg.cn/82d5c6fe44af4f028636df1fa1edbc7e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAYmVpZG91MTEx,size_10,color_FFFFFF,t_70,g_se,x_16#pic_center =30%x30%)
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/82d5c6fe44af4f028636df1fa1edbc7e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAYmVpZG91MTEx,size_10,color_FFFFFF,t_70,g_se,x_16#pic_center=30%x30%)
 （图片引自wiki）
 
 这样写有两个缺点：
@@ -267,7 +269,9 @@ $$
 $$
 
 这里$\mathbf{e_i}$代表坐标轴的单位向量
+
 $e_{ijk}$叫做置换符号(又叫Racci符号）
+
 $$
 e_{i j k}=\left\{\begin{array}{c}
 1 & ijk两个相同\\
@@ -315,6 +319,7 @@ $$
 $$
 \mathbf{A}\mathbf{v} \hspace{0.2in} \forall \mathbf{v}
 $$
+
 (这里黑体，表示用的是向量记号，没有用张量记号；张量记号是不需要黑体的，只需要加下标)
 向量$\mathbf{v}$的任意性表示了主体在于A
 
@@ -322,9 +327,11 @@ $$
 $$
 \mathbf{p}\cdot \mathbf{v} \hspace{0.2in} \forall \mathbf{v}
 $$
+
 $$
 \mathbf{p}\times  \mathbf{v} \hspace{0.2in} \forall \mathbf{v}
 $$
+
 $$
 \mathbf{p}  \mathbf{v} \hspace{0.2in} \forall \mathbf{v}
 $$
@@ -337,6 +344,7 @@ $$
 
 ### 1.6.1 散度
 对一个二阶张量来说
+
 $$
 \begin{matrix}
 \nabla \cdot \boldsymbol{\sigma}&\\
