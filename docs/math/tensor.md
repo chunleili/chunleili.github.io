@@ -27,7 +27,7 @@ $$
 \end{pmatrix}
 $$
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/82d5c6fe44af4f028636df1fa1edbc7e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAYmVpZG91MTEx,size_10,color_FFFFFF,t_70,g_se,x_16#pic_center=30%x30%)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/82d5c6fe44af4f028636df1fa1edbc7e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAYmVpZG91MTEx,size_10,color_FFFFFF,t_70,g_se,x_16#pic_center)
 （图片引自wiki）
 
 这样写有两个缺点：
@@ -84,10 +84,15 @@ $$
 例如
 $$
 x_i 
-$$是1阶张量，因为$i=1,2,3$， 它就有3个分量。（在力学中，它可以代表位置）
+$$
+
+是1阶张量，因为$i=1,2,3$， 它就有3个分量。（在力学中，它可以代表位置）
+
 $$
 \sigma_{ij} 
-$$是2阶张量，因为$i=1,2,3; j=1,2,3$ ，它就有9个分量。（在力学中，它可以代表应力）
+$$
+
+是2阶张量，因为$i=1,2,3; j=1,2,3$ ，它就有9个分量。（在力学中，它可以代表应力）
 $$
 c_{mnkl} 
 $$是4阶张量，因为$m=1,2,3; n=1,2,3; k=1,2,3; l=1,2,3$，它就有3\*3\*3\*3=81个分量。（在力学中，它可以代表刚度矩阵）
