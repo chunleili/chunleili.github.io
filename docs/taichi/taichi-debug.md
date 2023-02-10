@@ -1,23 +1,18 @@
 # 为taichi程序暂停和reset以便于调试
 
 先定义一个全局变量paused，相当于FLAG
-```cpp
-paused = ti.field(dtype=ti.i32, shape=())
-```
 
 再把主循环包起来
-```cpp
-    while window.running:
-        if window.is_pressed('r'):
-            # Reset
-            initialize_mass_points()
-            current_t = 0
+```python
+paused = ti.field(int, shape=())
 
-        if window.is_pressed(ti.ui.SPACE):
-            paused[None] = not paused[None]
-        if paused[None] == True:
-            for i in range(substeps):
-                substep()
-                current_t += dt
-            update_vertices()
+def main():
+    initialize()
+    while window.running:
+        for e in window.get_events(ti.ui.PRESS):
+            if e.key == ti.ui.SPACE:
+                paused[None] = not paused[None]
+            if e.key == 'r': initialize()
+        if not paused[None]:
+            # do something
 ```
