@@ -67,6 +67,8 @@
 
 [Sifakis SIGGRAPH 2012 Course: 图形学FEM入门](http://viterbi-web.usc.edu/~jbarbic/femdefo/)
 
+[Barraf and Witkin 1998 SIG COurse:Physically Based Modeling: Principles and Practice](https://www.cs.cmu.edu/~baraff/sigcourse/)
+
 ## 书籍类
 
 [cmake菜谱(系统学习cmake最好的书)](https://www.bookstack.cn/read/CMake-Cookbook/content-preface-preface-chinese.md)
