@@ -120,3 +120,20 @@
 
 [非牛顿模型](http://doc.simulationx.com/4.0/1033/Content/Libraries/NonNewtonianFluids.htm?TocPath=Libraries|Non-Newtonian%20Fluids|_____0)
 
+## 工具类
+
+[mathcha: 数学符号和数学画图](https://www.mathcha.io/)
+
+[chatPDF: 用chatGPT来读PDF文献](https://www.chatpdf.com/)
+
+[cursor: 根据输入生成代码（有VS Code插件）](https://www.cursor.so/)
+
+[copilot: VSCode插件 自动生成代码](https://github.com/features/copilot)
+
+## latex相关
+
+[mathpix:粘贴公式图片生成latex](https://snip.mathpix.com/)
+
+[在线latex公式编辑器](http://latex.codecogs.com/eqneditor/editor.php)
+
+[生成latex表格](https://www.tablesgenerator.com/latex_tables)
