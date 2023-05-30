@@ -136,6 +136,15 @@ XPBD和PBF的作者，在NV物理仿真组任职。physX的许多部分是他参
 
 https://mingg13.github.io/
 
+#### Alec Jacobson
+研究方向：geometry processing, including machine learning for 2D/3D geometry, physics-based simulation
+
+Associate Professor and Canada Research Chair in the Departments of Computer Science and Mathematics at University of Toronto
+
+University of Toronto
+
+[https://mingg13.github.io/](https://www.cs.toronto.edu/~jacobson/)
+
 
 ## 2 国内学者
 ### 2.1 国内年长学者
