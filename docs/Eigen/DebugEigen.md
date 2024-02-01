@@ -1,3 +1,4 @@
+(参考https://eigen.tuxfamily.org/index.php?title=Developer%27s_Corner#Debugging_under_Visual_Studio）
 假如我们直接想要检查Eigen中的VectorXf的值，我们会发现无法看到内部的值，如图
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/b060b9ec69ae456fa7925750727992ca.png)
