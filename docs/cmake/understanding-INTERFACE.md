@@ -158,7 +158,7 @@ private:
 
 - 对于private的property，不会传递，只会自己用。
 
-- 对于private的property，会传递，也自己用。
+- 对于public的property，会传递，也自己用。
 
 - 对于interface的property，会传递，但不会自己用。
 
