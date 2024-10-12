@@ -1,6 +1,8 @@
 # 如何使用Houdini渲染流体？
 版本：Houdini19.5 其他版本应该也差不多
 
+如果这里的图挂了，请看[csdn](https://blog.csdn.net/weixin_43940314/article/details/127653109?sharetype=blogdetail&amp;sharerId=127653109&amp;sharerefer=WAP&amp;sharesource=)
+
 渲染器与材质是直接关联的，不同渲染器有不同的灯光、材质。
 
 我们首先讲解如何利用Houdini自带的Mantra渲染（CPU渲染，较慢），然后讲解更快的第三方渲染器Redshift（GPU渲染，较快）。
