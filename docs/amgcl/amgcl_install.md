@@ -6,7 +6,7 @@ cmake -B build -DAMGCL_BUILD_EXAMPLES=1
 ```
 编译poisson3Db example
 ```
-cmake --build build  --config=Release --target=poisson3Db
+cmake --build build  --config=Release --target=poisson3Db --parallel=8
 ```
 下载数据（matrix maket格式）
 https://sparse.tamu.edu/FEMLAB/poisson3Db
@@ -14,7 +14,7 @@ https://sparse.tamu.edu/FEMLAB/poisson3Db
 
 运行example
 ```
-.\amgcl\build\tutorial\1.poisson3Db\Release\poisson3Db.exe .\poisson3Db.mtx .\poisson3Db_b.mtx
+.\build\tutorial\1.poisson3Db\Release\poisson3Db.exe .\poisson3Db.mtx .\poisson3Db_b.mtx
  ```
 结果
 
