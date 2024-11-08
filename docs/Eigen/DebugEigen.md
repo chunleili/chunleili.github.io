@@ -11,6 +11,9 @@
 
 （其中%VSINSTALLDIR%是Visual studio的安装目录）
 
+VS Code放在cpptools插件的Visualizers目录
+C:\Users\cl-w\.vscode\extensions\ms-vscode.cpptools-1.22.11-win32-x64\debugAdapters\vsdbg\bin\Visualizers
+
 这是现在的结果：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/8881b94130e84c73bd44c4324b48345c.png)
 
