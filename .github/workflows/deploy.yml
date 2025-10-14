@@ -10,23 +10,25 @@ on:
 
 jobs:
   deploy:
-    name: Deploy to my Github Pages
+    name: Deploy to my GitHub Pages
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: yarn
-          cache-dependency-path: './package-lock.json'
+          node-version: '20'          # ✅ upgrade Node
+          cache: 'yarn'               # ✅ cache yarn dependencies
+          cache-dependency-path: './yarn.lock'  # ✅ use the correct lockfile
 
-      - name: build website
+      - name: Build website
         run: |
           yarn install --frozen-lockfile
           yarn add remark-math@3 rehype-katex@5 hast-util-is-element@1.1.0
           yarn build
 
-      - name: Deploy to my Github Pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
