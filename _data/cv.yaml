@@ -6,7 +6,7 @@ cv:
   website: "https://chunleili.github.io/personal-page/"
   sections:
     summary:
-      - "I'm a PhD candidate at the VR Lab of Beihang University from 2021, supervised by Prof. Qinping Zhao and Prof. Yang Gao. My research focuses on physical simulation in computer graphics. Currently I am a visiting student at University College London, supervised by Prof. He Wang. I am about to graduate in 2026/2027. Interest:  Numerical Methods, Physical Simulation,Physical Based Animation, Refinforcement Learning, Computer Graphics."
+      - "I'm a PhD candidate at the VR Lab of Beihang University from 2021, supervised by Prof. Qinping Zhao and Prof. Yang Gao. My research focuses on physical simulation in computer graphics. Currently I am a visiting student at University College London, supervised by Prof. He Wang. I am about to graduate in 2026/2027. Interest: Numerical Methods, Physical Simulation, Physical Based Animation, Reinforcement Learning, Computer Graphics."
     education:
       - institution: "University College London"
         area: "Computer Science"
