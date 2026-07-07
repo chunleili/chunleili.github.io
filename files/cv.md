@@ -1,13 +1,13 @@
-# Chunlei Li's CV
+# Chunlei Li (李春蕾)'s CV
 
-- Phone: +44 7942 790012
+- Phone: +86 176 0063 3417
 - Email: [li_cl@foxmail.com](mailto:li_cl@foxmail.com)
 - Location: London / Beijing
 - Website: [chunleili.github.iopersonal-page](https://chunleili.github.io/personal-page/)
 
 
 # Summary
-I'm a PhD candidate at the VR Lab of Beihang University from 2021, supervised by Prof. Qinping Zhao and Prof. Yang Gao. My research focuses on physical simulation in computer graphics. Currently I am a visiting student at University College London, supervised by Prof. He Wang. I am about to graduate in 2026/2027. Interest: Numerical Methods, Physical Simulation, Physical Based Animation, Reinforcement Learning, Computer Graphics.
+I'm a PhD candidate at the VR Lab of Beihang University from 2021, supervised by Prof. Qinping Zhao and Prof. Yang Gao. My research focuses on physical simulation in computer graphics. Currently I am a visiting student at University College London, supervised by Prof. He Wang. I am about to graduate in 2026/2027. Interest: Numerical Methods, Physical Simulation, Physical Based Animation, Reinforcement Learning, Computer Graphics, AI4S, PDE.
 
 # Education
 ## **University College London**, Visiting PhD in Computer Science
@@ -131,4 +131,6 @@ May 2025 – Nov 2025
 # Skills
 **Languages:** CET Band 6: 578, CET Band 4: 560, TOEFL: 97, GRE: 323+3.5
 
-**DCC Software:** Houdini
+**DCC Software:** Houdini(5 years user)
+
+**Physics Engines:** Newton (PR contributor), MuJoCo, PhysX
