@@ -12,7 +12,7 @@ slidesurl: 'https://docs.google.com/presentation/d/1NcZVITDUfJIG9hKNJkx2TqsEaNnO
 code: 'https://github.com/chunleili/mgpbd'
 videourl: 'https://youtu.be/heScPwJo4AU'
 projecturl: 'https://chunleili.github.io/project-page-mgpbd'
-bibtexurl: 'http://chunleili.github.io/personal-page/files/MGPBD.bib'
+bibtexurl: 'https://chunleili.github.io/files/MGPBD.bib'
 # citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
 
