@@ -165,6 +165,8 @@ cv:
         details: "Houdini(5 years user)"
       - label: "Physics Engines"
         details: "Newton (PR contributor), MuJoCo, PhysX"
+      - label: "World Models"
+        details: "Experience in debugging DreamZero"
 design:
   theme: engineeringresumes
   entry_types:

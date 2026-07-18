@@ -6,6 +6,8 @@ permalink: /publication/2024-04-01-NonNewton-number-1
 # excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2024-04-01
 venue: 'TVCG'
+authors: 'Chunlei Li, Yang Gao, Jiayi He, Tianwei Cheng, Shuai Li, Aimin Hao, Hong Qin'
+teaser: 'images/nonNewton_preview.png'
 slidesurl: 'https://github.com/chunleili/nonNewtonPaper/blob/main/video.pptx'
 paperurl: 'https://arxiv.org/abs/2312.04814'
 bibtexurl: 'http://chunleili.github.io/personal-page/files/NonNewton.bib'

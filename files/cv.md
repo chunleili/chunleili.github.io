@@ -103,3 +103,4 @@ I'm a PhD candidate at the VR Lab of Beihang University from 2021, supervised by
 - Languages: CET Band 6: 578, CET Band 4: 560, TOEFL: 97, GRE: 323+3.5
 - DCC Software: Houdini(5 years user)
 - Physics Engines: Newton (PR contributor), MuJoCo, PhysX
+- World Models: Experience in debugging DreamZero

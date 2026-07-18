@@ -5,6 +5,8 @@ category: conferences
 permalink: /publication/2025-08-14-MGPBD-number-2
 date: 2025-07-27
 venue: 'SIGGRAPH'
+authors: 'Chunlei Li, Peng Yu, Tiantian Liu, Siyuan Yu, Yuting Xiao, Shuai Li, Aimin Hao, Yang Gao, Qinping Zhao'
+teaser: 'images/mgpbd_preview.png'
 paperurl: 'https://arxiv.org/abs/2505.13390'
 slidesurl: 'https://docs.google.com/presentation/d/1NcZVITDUfJIG9hKNJkx2TqsEaNnO3dNk/edit?usp=share_link&ouid=111038135074814190899&rtpof=true&sd=true'
 code: 'https://github.com/chunleili/mgpbd'
