@@ -8,7 +8,8 @@ venue: 'International Journal of Exergy'
 authors: 'Chunlei Li, Qitai Eri'
 teaser: 'images/sco2_preview.png'
 group: msc
-paperurl: 'https://doi.org/10.1504/IJEX.2021.115652'
+paperurl: 'https://chunleili.github.io/files/sCO2-Brayton.pdf'
+doiurl: 'https://doi.org/10.1504/IJEX.2021.115652'
 ---
 ![sCO2 Brayton recompression cycle](../images/sco2_preview.png)
 

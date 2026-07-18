@@ -33,6 +33,7 @@ I am a Ph.D. student in Computer Science at VR Lab, Beihang University. I am abo
       <div class="pub-venue">{{ pub.venue }}{% unless pub.venue contains "Review" %}, {{ pub.date | date: "%Y" }}{% endunless %}</div>
       <div class="pub-links">
         {% if pub.paperurl %}<a href="{{ pub.paperurl }}">Paper</a>{% endif %}
+        {% if pub.doiurl %}<a href="{{ pub.doiurl }}">DOI</a>{% endif %}
         {% if pub.projecturl %}<a href="{{ pub.projecturl }}">Project</a>{% endif %}
         {% if pub.code %}<a href="{{ pub.code }}">Code</a>{% endif %}
         {% if pub.videourl %}<a href="{{ pub.videourl }}">Video</a>{% endif %}
@@ -112,6 +113,7 @@ I am a Ph.D. student in Computer Science at VR Lab, Beihang University. I am abo
       <div class="pub-venue">{{ pub.venue }}, {{ pub.date | date: "%Y" }}</div>
       <div class="pub-links">
         {% if pub.paperurl %}<a href="{{ pub.paperurl }}">Paper</a>{% endif %}
+        {% if pub.doiurl %}<a href="{{ pub.doiurl }}">DOI</a>{% endif %}
       </div>
     </div>
   </div>
