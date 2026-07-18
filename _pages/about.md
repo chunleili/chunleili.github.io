@@ -94,8 +94,6 @@ I am a Ph.D. student in Computer Science at VR Lab, Beihang University. I am abo
 
 ### Earlier publications (M.Sc., energy engineering)
 
-- Comparison between Two Eulerian-Lagrangian Methods: CFD-DEM & MPPIC on the biomass gasification in a fluidized bed. *Biomass Conversion and Biorefinery*, 2021. [doi](https://doi.org/10.1007/s13399-021-01384-2)
-- Comparative Study of Three Modified sCO2 Brayton Recompression Cycles Based on Energy and Exergy Analysis with GA Optimization. *International Journal of Exergy*, 2021. [doi](https://doi.org/10.1504/IJEX.2021.115652)
 - Multi-objective Optimization of sCO₂, sCO₂/tCO₂ Cycles Based on Energy-Exergy-Economy Balanced Analysis. *International Journal of Exergy*, 2022. [doi](https://doi.org/10.1504/IJEX.2022.122308)
 
 ---
