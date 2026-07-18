@@ -22,7 +22,7 @@ jobs:
           python-version: '3.10' # 与本地 .venv-rendercv 一致；rendercv 2.3 在 3.14 上装不全
 
       - name: Install rendercv
-        run: pip install "rendercv[full]==2.3"  # 与本地 .venv-rendercv 版本保持一致，新版 schema 不认 design.entry_types
+        run: pip install "rendercv[full]==2.3" "typer==0.25.0" "typst==0.14.8"  # 与本地 .venv-rendercv 一致；新版 rendercv 不认 design.entry_types，typer 0.27 会破坏 2.3 的 CLI
 
       - name: Generate PDF
         run: rendercv render _data/cv.yaml
