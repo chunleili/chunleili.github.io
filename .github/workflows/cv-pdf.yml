@@ -28,10 +28,10 @@ jobs:
         run: rendercv render _data/cv.yaml
 
       - name: Move PDF to files folder
-        run: cp "_data/rendercv_output/Chunlei_Li_(李春蕾)_CV.pdf" files/cv.pdf
+        run: cp "rendercv_output/Chunlei_Li_(李春蕾)_CV.pdf" files/cv.pdf
 
       - name: Move Markdown to files folder
-        run: cp "_data/rendercv_output/Chunlei_Li_(李春蕾)_CV.md" files/cv.md
+        run: cp "rendercv_output/Chunlei_Li_(李春蕾)_CV.md" files/cv.md
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
