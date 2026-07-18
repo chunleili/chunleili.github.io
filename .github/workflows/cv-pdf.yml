@@ -21,6 +21,9 @@ jobs:
         with:
           python-version: '3.10' # 与本地 .venv-rendercv 一致；rendercv 2.3 在 3.14 上装不全
 
+      - name: Install CJK fonts
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk  # 简历里有中文名，没有 CJK 字体会渲染成方框
+
       - name: Install rendercv
         run: pip install "rendercv[full]==2.3" "typer==0.25.0" "typst==0.14.8"  # 与本地 .venv-rendercv 一致；新版 rendercv 不认 design.entry_types，typer 0.27 会破坏 2.3 的 CLI
 

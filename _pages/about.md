@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Chunlei Li Personal Page"
+title: "Chunlei Li (李春蕾) Personal Page"
 author_profile: true
 redirect_from: 
   - /about/
@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-I am a Ph.D. student in Computer Science at VR Lab, Beihang University. I am about to complete my Ph.D. degree in 2026. My research interests include physics-based animation, computer graphics, simulation, and neural operator. I am supervised by Prof. [Qinping Zhao](https://www.cae.cn/cae/html/main/colys/42717920.html) and Prof. [Yang Gao](https://scse.buaa.edu.cn/info/1078/12180.htm). I am currently a visiting student at University College London under the supervision of Prof. [He Wang](https://drhewang.com/).
+I am a Ph.D. student in Computer Science at VR Lab, Beihang University. I am about to complete my Ph.D. degree in 2026. My research interests include physics-based animation, computer graphics, simulation, and neural operator. I am supervised by Prof. [Qinping Zhao (赵沁平)](https://www.cae.cn/cae/html/main/colys/42717920.html), Prof. [Yang Gao (高阳)](https://scse.buaa.edu.cn/info/1078/12180.htm), and Prof. [Shuai Li (李帅)](https://scse.buaa.edu.cn/info/1078/7416.htm). I am currently a visiting student at University College London under the supervision of Prof. [He Wang (王鹤)](https://drhewang.com/).
 
 [My CV](https://chunleili.github.io/files/cv.pdf) | Contact: li_cl@foxmail.com
 
