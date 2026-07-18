@@ -18,6 +18,7 @@ I am a Ph.D. student in Computer Science at VR Lab, Beihang University. I am abo
 <div class="pub-list">
   {% assign pubs = site.publications | sort: 'date' | reverse %}
   {% for pub in pubs %}
+  {% if pub.group == 'msc' %}{% continue %}{% endif %}
   <div class="pub-row">
     {% if pub.teaser %}
     <div class="pub-thumb">
@@ -93,6 +94,29 @@ I am a Ph.D. student in Computer Science at VR Lab, Beihang University. I am abo
 </style>
 
 ### Earlier publications (M.Sc., energy engineering)
+
+<div class="pub-list">
+  {% for pub in pubs %}
+  {% unless pub.group == 'msc' %}{% continue %}{% endunless %}
+  <div class="pub-row">
+    {% if pub.teaser %}
+    <div class="pub-thumb">
+      <a href="{{ base_path }}/{{ pub.teaser }}"><img src="{{ base_path }}/{{ pub.teaser }}" alt="{{ pub.title }}"></a>
+    </div>
+    {% endif %}
+    <div class="pub-meta">
+      <a class="pub-title" href="{{ base_path }}{{ pub.url }}">{{ pub.title }}</a>
+      {% if pub.authors %}
+      <div class="pub-authors">{{ pub.authors | replace: "Chunlei Li", "<b>Chunlei Li</b>" }}</div>
+      {% endif %}
+      <div class="pub-venue">{{ pub.venue }}, {{ pub.date | date: "%Y" }}</div>
+      <div class="pub-links">
+        {% if pub.paperurl %}<a href="{{ pub.paperurl }}">Paper</a>{% endif %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
 
 - Multi-objective Optimization of sCO₂, sCO₂/tCO₂ Cycles Based on Energy-Exergy-Economy Balanced Analysis. *International Journal of Exergy*, 2022. [doi](https://doi.org/10.1504/IJEX.2022.122308)
 

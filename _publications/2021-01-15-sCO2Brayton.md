@@ -7,6 +7,7 @@ date: 2021-01-15
 venue: 'International Journal of Exergy'
 authors: 'Chunlei Li, Qitai Eri'
 teaser: 'images/sco2_preview.png'
+group: msc
 paperurl: 'https://doi.org/10.1504/IJEX.2021.115652'
 ---
 ![sCO2 Brayton recompression cycle](../images/sco2_preview.png)
