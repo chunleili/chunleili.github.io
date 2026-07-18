@@ -3,7 +3,7 @@
 - Phone: +86 176 0063 3417
 - Email: [li_cl@foxmail.com](mailto:li_cl@foxmail.com)
 - Location: London / Beijing
-- Website: [chunleili.github.iopersonal-page](https://chunleili.github.io/personal-page/)
+- Website: [chunleili.github.io](https://chunleili.github.io/)
 
 
 # Summary
