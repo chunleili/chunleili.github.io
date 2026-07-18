@@ -8,7 +8,7 @@
 
 # Summary
 
-I'm a PhD candidate at the VR Lab of Beihang University from 2021, supervised by Prof. Qinping Zhao and Prof. Yang Gao. My research focuses on physical simulation in computer graphics. Currently I am a visiting student at University College London, supervised by Prof. He Wang. I am about to graduate in 2026/2027. Interest: Numerical Methods, Physical Simulation, Physical Based Animation, Reinforcement Learning, Computer Graphics, AI4S, PDE.
+I'm a PhD candidate at the VR Lab of Beihang University from 2021, supervised by Prof. Qinping Zhao (赵沁平), Prof. Yang Gao (高阳), and Prof. Shuai Li (李帅). My research focuses on physical simulation in computer graphics. Currently I am a visiting student at University College London, supervised by Prof. He Wang (王鹤). I am about to graduate in 2026/2027. Interest: Numerical Methods, Physical Simulation, Physical Based Animation, Reinforcement Learning, Computer Graphics, AI4S, PDE.
 
 # Education
 
