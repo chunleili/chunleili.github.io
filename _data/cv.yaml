@@ -41,6 +41,20 @@ cv:
 
 
     publications:
+      - title: "RLMuscle: Muscle-Driven Character Animation via Reinforcement Learning"
+        authors:
+          - "Chunlei Li"
+          - "Siyuan Yu"
+          - "Yang Gao"
+          - "Shuai Li"
+          - "Peng Yu"
+          - "Aimin Hao"
+          - "He Wang"
+        date: "Under Review"
+        journal: "IEEE Transactions on Visualization and Computer Graphics"
+        url: "https://chunleili.github.io/project-page-rlmuscle/"
+        summary: "Motivation: in most 3D animation pipelines artists hand-tune per-muscle activations, which is time-consuming and lacks physical realism. Novelty: an RL controller trained on a 1D Hill-type surrogate automatically discovers per-muscle activations, which then drive a GPU multigrid-XPBD volumetric simulator with Hill-type fiber constraints, animating a 194-muscle full-body model at 18 ms per frame."
+
       - title: "MGPBD: A Multigrid Accelerated Global XPBD Solver"
         authors:
           - "Chunlei Li"
@@ -55,6 +69,7 @@ cv:
         date: "2025-08-14"
         journal: "SIGGRAPH"
         doi: "10.1145/3721238.3730720"
+        summary: "Motivation: XPBD's Gauss-Seidel solver stalls on low-frequency errors, causing instability in high-resolution, high-stiffness simulations. Novelty: a global UA-AMG preconditioned CG solver with lazy prolongator reuse and lightweight near-kernel construction, greatly improving convergence and stability at low overhead."
 
       - title: "Parallel Constraint Graph Partitioning and Coloring for Realtime Soft-Body Cutting"
         authors:
@@ -69,6 +84,7 @@ cv:
         date: "2025-04-19"
         journal: "Pacific Graphics"
         doi: "10.2312/pg.20251267"
+        summary: "Motivation: cutting changes mesh topology on the fly, invalidating the precomputed constraint partitioning and coloring that parallel GPU solvers rely on. Novelty: a parallel constraint-graph re-partitioning and re-coloring scheme that restores solver parallelism instantly, enabling realtime soft-body cutting."
 
       - title: "A Unified Particle-Based Solver for non-Newtonian Behaviors Simulation"
         authors:
@@ -81,6 +97,7 @@ cv:
         date: "2023-12-01"
         journal: "IEEE Transactions on Visualization and Computer Graphics"
         doi: "10.1109/TVCG.2023.3341453"
+        summary: "Motivation: non-Newtonian materials such as mud, dough and slime span fluid-like and solid-like behaviors that single-purpose solvers cannot capture consistently. Novelty: a unified SPH solver whose constitutive model smoothly covers viscous, elastic and plastic regimes, reproducing shear-thinning/thickening and viscoelastic effects in one framework."
 
       - title: "Comparison between Two Eulerian-Lagrangian Methods: CFD-DEM & MPPIC on the biomass gasification in a fluidized bed"
         authors:
@@ -150,3 +167,8 @@ cv:
         details: "Newton (PR contributor), MuJoCo, PhysX"
 design:
   theme: engineeringresumes
+  entry_types:
+    publication_entry:
+      main_column_second_row_template: "AUTHORS\nURL (JOURNAL)\nSUMMARY"
+      main_column_second_row_without_url_template: "AUTHORS\nJOURNAL\nSUMMARY"
+      main_column_second_row_without_journal_template: "AUTHORS\nURL\nSUMMARY"
