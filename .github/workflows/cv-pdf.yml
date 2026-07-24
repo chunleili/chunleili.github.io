@@ -3,7 +3,8 @@ name: Build CV PDF
 on:
   push:
     paths:
-      - "_data/cv.yaml" 
+      - "_data/cv.yaml"
+      - "_data/cv_zh.yaml"
       - ".github/workflows/cv-pdf.yml"
   workflow_dispatch:
 
@@ -30,11 +31,18 @@ jobs:
       - name: Generate PDF
         run: rendercv render _data/cv.yaml
 
+      - name: Generate Chinese PDF
+        run: rendercv render _data/cv_zh.yaml
+
       - name: Move PDF to files folder
-        run: cp "rendercv_output/Chunlei_Li_(李春蕾)_CV.pdf" files/cv.pdf
+        run: |
+          cp "rendercv_output/Chunlei_Li_(李春蕾)_CV.pdf" files/cv.pdf
+          cp "rendercv_output/李春蕾_(Chunlei_Li)_CV.pdf" files/cv_zh.pdf
 
       - name: Move Markdown to files folder
-        run: cp "rendercv_output/Chunlei_Li_(李春蕾)_CV.md" files/cv.md
+        run: |
+          cp "rendercv_output/Chunlei_Li_(李春蕾)_CV.md" files/cv.md
+          cp "rendercv_output/李春蕾_(Chunlei_Li)_CV.md" files/cv_zh.md
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
@@ -50,7 +58,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "actions@github.com"
-          git add files/cv.pdf files/cv.md
+          git add files/cv.pdf files/cv.md files/cv_zh.pdf files/cv_zh.md
           git diff --cached --quiet && exit 0
           git commit -m "Automate CV PDF update"
           git status

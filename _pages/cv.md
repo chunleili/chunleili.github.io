@@ -12,6 +12,8 @@ redirect_from:
 <div class="cv-download-links">
   <a href="{{ base_path }}/files/cv.pdf" class="btn btn--primary">Download CV as PDF</a>
   <a href="{{ base_path }}/files/cv.md" class="btn btn--inverse">View Markdown CV</a>
+  <a href="{{ base_path }}/files/cv_zh.pdf" class="btn btn--primary">下载中文简历 (PDF)</a>
+  <a href="{{ base_path }}/files/cv_zh.md" class="btn btn--inverse">查看中文简历 (Markdown)</a>
 </div>
 
 <!-- 
