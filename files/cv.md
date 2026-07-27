@@ -10,6 +10,8 @@
 
 I'm a PhD candidate at the VR Lab of Beihang University from 2021, supervised by Prof. Qinping Zhao (赵沁平), Prof. Yang Gao (高阳), and Prof. Shuai Li (李帅). My research focuses on physical simulation in computer graphics. Currently I am a visiting student at University College London, supervised by Prof. He Wang (王鹤). I am about to graduate in 2026/2027. Interest: Numerical Methods, Physical Simulation, Physical Based Animation, Reinforcement Learning, Computer Graphics, AI4S, PDE.
 
+**My long-term vision:** bridging AI, physics, and numerics. 1) *AI for physics* (e.g. neural operators, physical foundation models): using learning to accelerate, generalize, and extend classical numerical methods. 2) *physics for AI* (e.g. learning dynamics, explanation of scaling laws, acceleration of training convergence): using PDE theory, fluid mechanics, and numerical analysis to study learning itself.
+
 # Education
 
 ## University College London, Visiting PhD in Computer Science
