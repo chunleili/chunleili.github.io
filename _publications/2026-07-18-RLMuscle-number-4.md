@@ -7,6 +7,7 @@ date: 2026-07-18
 venue: 'IEEE TVCG (Under Review)'
 authors: 'Chunlei Li, Siyuan Yu, Yang Gao, Shuai Li, Peng Yu, Aimin Hao, He Wang'
 teaser: 'images/rlmuscle_preview.png'
+code: 'https://github.com/chunleili/rlmuscleV2'
 slidesurl: 'https://github.com/chunleili/chunleili.github.io/releases/download/rlmuscle-assets/RLMuscle-slides.pptx'
 videourl: 'https://github.com/chunleili/chunleili.github.io/releases/download/rlmuscle-assets/RLMuscle-v2.mp4'
 projecturl: 'https://chunleili.github.io/project-page-rlmuscle/'
