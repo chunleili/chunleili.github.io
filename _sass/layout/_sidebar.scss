@@ -17,17 +17,6 @@
     margin-top: 1em;
   }
 
-  // Keep the fixed-position behavior on the same breakpoint as the sidebar
-  // grid and author-profile layout below. Mixing a px breakpoint here with
-  // the em-based $large breakpoint can leave a fixed-position, still-horizontal
-  // mobile profile over the page when the browser's default font size is enlarged.
-  @include breakpoint($large) {
-    height: 100vh;
-    overflow-y: auto;               // Add scrollbar if the sidebar is too long
-    position: fixed;
-    padding-top: $masthead-height;
-  }
-
   @include breakpoint($large) {
     @include span(2 of 12);
     opacity: 1;
@@ -84,8 +73,19 @@
    Author profile and links
    ========================================================================== */
 
+.author__profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  @include breakpoint($large) {
+    display: block;
+  }
+}
+
 .author__avatar {
-  display: table-cell;
+  display: block;
+  flex: 0 0 36px;
   vertical-align: top;
   width: 36px;
   // set width only, for non-square avatars
@@ -93,6 +93,7 @@
 
   @include breakpoint($large) {
     display: block;
+    flex: none;
     width: auto;
     height: auto;
   }
@@ -109,7 +110,9 @@
 }
 
 .author__content {
-  display: table-cell;
+  display: block;
+  flex: 1 1 0;
+  min-width: 0;
   vertical-align: top;
   padding-left: 15px;
   padding-right: 25px;
@@ -117,6 +120,7 @@
 
   @include breakpoint($large) {
     display: block;
+    flex: none;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
@@ -162,13 +166,11 @@
 }
 
 .author__urls-wrapper {
-  position: relative;
-  display: table-cell;
-  vertical-align: middle;
+  display: block;
+  flex: 0 0 100%;
+  width: 100%;
   font-family: $sans-serif;
-  z-index: 10;
-  position: relative;
-  cursor: pointer;
+  cursor: default;
 
   li:last-child {
     a {
@@ -178,34 +180,27 @@
 
   @include breakpoint($large) {
     display: block;
-  }
-
-  button {
-    margin-bottom: 0;
-
-    @include breakpoint($large) {
-      display: none;
-    }
+    flex: none;
   }
 }
 
 .author__urls {
-  display: none;
-  position: absolute;
-  right: 0;
-  margin-top: 15px;
-  padding: 10px;
+  display: flex;
+  position: static;
+  flex-wrap: wrap;
+  gap: 0.25em 1em;
+  margin: 0.75em 0 0;
+  padding: 0;
   list-style-type: none;
-  border: 1px solid var(--global-border-color);
-  border-radius: $border-radius;
-  background: var(--global-bg-color);
-  z-index: -1;
-  box-shadow: 0 0 10px rgba(#000, 0.25);
+  border: 0;
+  background: transparent;
+  box-shadow: none;
   cursor: default;
 
   @include breakpoint($large) {
     display: block;
-    position: relative;
+    position: static;
+    gap: 0;
     margin: 0;
     padding: 0;
     border: 0;
@@ -214,37 +209,11 @@
   }
 
   &:before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: -11px;
-    left: calc(50% - 10px);
-    width: 0;
-    border-style: solid;
-    border-width: 0 10px 10px;
-    border-color: var(--global-border-color) transparent;
-    z-index: 0;
-
-    @include breakpoint($large) {
-      display: none;
-    }
+    display: none;
   }
 
   &:after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: calc(50% - 10px);
-    width: 0;
-    border-style: solid;
-    border-width: 0 10px 10px;
-    border-color: #fff transparent;
-    z-index: 1;
-
-    @include breakpoint($large) {
-      display: none;
-    }
+    display: none;
   }
 
   li {

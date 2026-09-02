@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-I am a Ph.D. student in Computer Science at VR Lab, Beihang University. I am about to complete my Ph.D. degree in 2026. My research interests include physics-based animation, computer graphics, simulation, and neural operator. I am supervised by Prof. [Qinping Zhao (赵沁平)](https://www.cae.cn/cae/html/main/colys/42717920.html), Prof. [Yang Gao (高阳)](https://scse.buaa.edu.cn/info/1078/12180.htm), and Prof. [Shuai Li (李帅)](https://scse.buaa.edu.cn/info/1078/7416.htm). I am currently a visiting student at University College London under the supervision of Prof. [He Wang (王鹤)](https://drhewang.com/).
+I am a Ph.D. student in Computer Science at VR Lab, Beihang University. I am about to complete my Ph.D. degree in 2026. My research interests include physics-based animation, computer graphics, simulation, and neural operator. I am supervised by Prof. [Qinping Zhao (赵沁平)](https://www.cae.cn/cae/html/main/colys/42717920.html), Prof. [Yang Gao (高阳)](https://scse.buaa.edu.cn/info/1078/12180.htm), and Prof. [Shuai Li (李帅)](https://scse.buaa.edu.cn/info/1078/7416.htm). I was a visiting student at University College London under the supervision of Prof. [He Wang (王鹤)](https://drhewang.com/).
 
 **I am currently on the job market**, looking for postdoctoral positions starting in late 2026 or early 2027. Feel free to get in touch.
 
