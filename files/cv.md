@@ -93,7 +93,7 @@ I'm a PhD candidate at the VR Lab of Beihang University from 2021, supervised by
 
 - May 2025 – Nov 2025
 - Beijing
-- R&D of the multigrid accelerated GPU-based muscle simulation in Houdini.
+- Developed a CUDA-based Houdini HDK muscle solver node using the MGPBD algorithm, achieving a 4-10x speedup over Vellum at equivalent animation quality.
 
 ## miHoYo, Intern
 

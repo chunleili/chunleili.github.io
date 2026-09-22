@@ -147,7 +147,7 @@ cv:
         start_date: 2025-05
         end_date: 2025-11
         highlights:
-          - R&D of the multigrid accelerated GPU-based muscle simulation in Houdini.
+          - "Developed a CUDA-based Houdini HDK muscle solver node using the MGPBD algorithm, achieving a 4-10x speedup over Vellum at equivalent animation quality."
       - company: miHoYo
         position: Intern
         start_date: 2026-09
