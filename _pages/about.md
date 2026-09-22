@@ -11,7 +11,7 @@ redirect_from:
 
 I am a Ph.D. student in Computer Science at VR Lab, Beihang University. I expect to complete my Ph.D. in December 2026. My research interests include physics-based animation, computer graphics, simulation, and AI for physics. I am supervised by Prof. [Qinping Zhao (赵沁平)](https://www.cae.cn/cae/html/main/colys/42717920.html), Prof. [Yang Gao (高阳)](https://scse.buaa.edu.cn/info/1078/12180.htm), and Prof. [Shuai Li (李帅)](https://scse.buaa.edu.cn/info/1078/7416.htm). I was a visiting student at University College London under the supervision of Prof. [He Wang (王鹤)](https://drhewang.com/).
 
-**I am currently working as an intern at miHoYo and seeking full-time opportunities.**
+**I am currently an intern at miHoYo (September 2026 - present), working on AI physics for games with a focus on neural cloth simulation. I am seeking full-time opportunities.**
 
 **My long-term vision:** bridging AI, physics, and numerics. 1) *AI for physics* (e.g. neural operators, physical foundation models): using learning to accelerate, generalize, and extend classical numerical methods. 2) *physics for AI* (e.g. learning dynamics, explanation of scaling laws, acceleration of training convergence): using PDE theory, fluid mechanics, and numerical analysis to study learning itself.
 
