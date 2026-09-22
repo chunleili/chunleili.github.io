@@ -26,6 +26,16 @@ def render(input_path: Path) -> None:
         lambda match: match[1] + escape_typst_characters(match[2]) + match[3],
         source,
     )
+    # Keep each two-column heading with the body that follows it.
+    before, separator, after = source.partition("#let two-col-entry(")
+    heading, next_separator, remainder = after.partition("#let one-col-entry(")
+    if not separator or not next_separator:
+        raise ValueError("Unexpected RenderCV entry template")
+    heading = heading.replace(
+        "breakable: design-entries-allow-page-break-in-entries,",
+        "sticky: true, breakable: design-entries-allow-page-break-in-entries,",
+    )
+    source = before + separator + heading + next_separator + remainder
     typst_path.write_text(source, encoding="utf-8")
     renderer.render_a_pdf_from_typst(typst_path)
     renderer.render_pngs_from_typst(typst_path)

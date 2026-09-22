@@ -189,6 +189,7 @@ design:
   theme: engineeringresumes
   entries:
     allow_page_break_in_entries: false
+    vertical_space_between_entries: "0.3cm"
   entry_types:
     publication_entry:
       main_column_second_row_template: "AUTHORS\nURL (JOURNAL)\nSUMMARY"
