@@ -6,8 +6,7 @@ cv:
   website: "https://chunleili.github.io/"
   sections:
     summary:
-      - "I'm a PhD candidate at the VR Lab of Beihang University from 2021, supervised by Prof. Qinping Zhao (赵沁平), Prof. Yang Gao (高阳), and Prof. Shuai Li (李帅). My research focuses on physical simulation in computer graphics. I was a visiting student at University College London, supervised by Prof. He Wang (王鹤). I am about to graduate in 2026/2027. Interest: Numerical Methods, Physical Simulation, Physical Based Animation, Reinforcement Learning, Computer Graphics, AI4S, PDE."
-      - "**My long-term vision:** bridging AI, physics, and numerics. 1) *AI for physics* (e.g. neural operators, physical foundation models): using learning to accelerate, generalize, and extend classical numerical methods. 2) *physics for AI* (e.g. learning dynamics, explanation of scaling laws, acceleration of training convergence): using PDE theory, fluid mechanics, and numerical analysis to study learning itself."
+      - "I'm a PhD candidate at the VR Lab of Beihang University from 2021, supervised by Prof. Qinping Zhao (赵沁平), Prof. Yang Gao (高阳), and Prof. Shuai Li (李帅). My research focuses on physical simulation in computer graphics. I was a visiting student at University College London, supervised by Prof. He Wang (王鹤). I expect to graduate in December 2026. Interest: Numerical Methods, Physical Simulation, Physical Based Animation, Reinforcement Learning, Computer Graphics, AI4S, PDE. Personal homepage: [chunleili.github.io](https://chunleili.github.io/)."
     education:
       - institution: "University College London"
         area: "Computer Science"
@@ -44,7 +43,7 @@ cv:
     publications:
       - title: "RLMuscle: Muscle-Driven Character Animation via Reinforcement Learning"
         authors:
-          - "Chunlei Li"
+          - "**Chunlei Li**"
           - "Siyuan Yu"
           - "Yang Gao"
           - "Shuai Li"
@@ -58,7 +57,7 @@ cv:
 
       - title: "MGPBD: A Multigrid Accelerated Global XPBD Solver"
         authors:
-          - "Chunlei Li"
+          - "**Chunlei Li**"
           - "Peng Yu"
           - "Tiantian Liu"
           - "Siyuan Yu"
@@ -68,7 +67,7 @@ cv:
           - "Yang Gao"
           - "Qinping Zhao"
         date: "2025-08-14"
-        journal: "SIGGRAPH"
+        journal: "SIGGRAPH | [Project page](https://chunleili.github.io/project-page-mgpbd/)"
         doi: "10.1145/3721238.3730720"
         summary: "Motivation: XPBD's Gauss-Seidel solver stalls on low-frequency errors, causing instability in high-resolution, high-stiffness simulations. Novelty: a global UA-AMG preconditioned CG solver with lazy prolongator reuse and lightweight near-kernel construction, greatly improving convergence and stability at low overhead."
 
@@ -76,7 +75,7 @@ cv:
         authors:
             - "Peng Yu"
             - "Ruiqi Wang"
-            - "Chunlei Li"
+            - "**Chunlei Li**"
             - "Yuxuan Li"
             - "Xiao Zhai"
             - "Yuanbo He"
@@ -89,44 +88,47 @@ cv:
 
       - title: "A Unified Particle-Based Solver for non-Newtonian Behaviors Simulation"
         authors:
-          - "Chunlei Li"
+          - "**Chunlei Li**"
           - "Yang Gao"
           - "Jiayi He"
           - "Tianwei Cheng"
           - "Shuai Li"
           - "Aimin Hao"
         date: "2023-12-01"
-        journal: "IEEE Transactions on Visualization and Computer Graphics"
+        journal: "IEEE Transactions on Visualization and Computer Graphics | [Project page](https://chunleili.github.io/project-page-nonNewton/)"
         doi: "10.1109/TVCG.2023.3341453"
         summary: "Motivation: non-Newtonian behaviors in blood, melting chocolate, and water-starch mixtures span fluid-like and solid-like regimes that single-purpose solvers cannot capture consistently. Novelty: a unified SPH solver using a generalized Maxwell model for unified physical modeling of viscosity, elasticity, and plasticity, reproducing shear-thinning/thickening and viscoelastic effects in one framework."
 
       - title: "Comparison between Two Eulerian-Lagrangian Methods: CFD-DEM & MPPIC on the biomass gasification in a fluidized bed"
         authors:
-          - "Chunlei Li"
+          - "**Chunlei Li**"
           - "Qitai Eri"
         date: "2021-02-25"
         journal: "Biomass Conversion and Biorefinery"
         doi: "10.1007/s13399-021-01384-2"
+        summary: "(Work during master's studies)"
 
       - title: "Comparative Study of Three Modified sCO2 Brayton Recompression Cycles Based on Energy and Exergy Analysis with GA Optimization"
         authors:
-          - "Chunlei Li"
+          - "**Chunlei Li**"
           - "Qitai Eri"
         date: "2021-01-15"
         journal: "International Journal of Exergy"
         doi: "10.1504/IJEX.2021.115652"
+        summary: "(Work during master's studies)"
         
       - title: "Multi-objective Optimization of sCO₂, sCO₂/tCO₂ Cycles Based on Energy-Exergy-Economy Balanced Analysis"
         authors:
-          - "Chunlei Li"
+          - "**Chunlei Li**"
           - "Qitai Eri"
         date: "2022-04-19"
         journal: "International Journal of Exergy"
         doi: "10.1504/IJEX.2022.122308"
+        summary: "(Work during master's studies)"
 
 
 
-    Experience:
+    Internships and Projects:
       - company: Zeno Tech
         position: R&D
         location: Online
@@ -142,7 +144,7 @@ cv:
         highlights:
           - "Intern: R&D of the PBD method. Supervised by Dr. Tiantian Liu, development of PBD solver."
       - company: Alibaba
-        position: R&D
+        position: Industry Collaboration Project
         location: Beijing
         start_date: 2025-05
         end_date: 2025-11
@@ -172,10 +174,10 @@ cv:
         details: "Houdini(5 years user)"
       - label: "Physics Engines"
         details: "Newton (PR contributor), MuJoCo, PhysX"
-      - label: "World Models"
-        details: "Experience in debugging DreamZero"
 design:
   theme: engineeringresumes
+  entries:
+    allow_page_break_in_entries: false
   entry_types:
     publication_entry:
       main_column_second_row_template: "AUTHORS\nURL (JOURNAL)\nSUMMARY"

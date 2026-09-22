@@ -6,8 +6,7 @@ cv:
   website: "https://chunleili.github.io/"
   sections:
     个人简介:
-      - "本人自 2021 年起在北京航空航天大学虚拟现实实验室攻读博士学位,师从赵沁平教授、高阳教授与李帅教授,研究方向为计算机图形学中的物理仿真。曾在伦敦大学学院(UCL)访学,师从王鹤教授,预计 2026/2027 年毕业。研究兴趣:数值方法、物理仿真、基于物理的动画、强化学习、计算机图形学、AI4S、偏微分方程。"
-      - "**长期研究愿景:** 打通 AI、物理与数值方法。1) *AI for physics*(如神经算子、物理基础模型):用学习去加速、泛化并拓展经典数值方法。2) *physics for AI*(如学习动力学、scaling law 的解释、训练收敛加速):用偏微分方程理论、流体力学与数值分析的方法研究学习本身。"
+      - "本人自 2021 年起在北京航空航天大学虚拟现实实验室攻读博士学位,师从赵沁平教授、高阳教授与李帅教授,研究方向为计算机图形学中的物理仿真。曾在伦敦大学学院(UCL)访学,师从王鹤教授,预计 2026 年 12 月毕业。研究兴趣:数值方法、物理仿真、基于物理的动画、强化学习、计算机图形学、AI4S、偏微分方程。 个人主页:[chunleili.github.io](https://chunleili.github.io/)。"
     教育经历:
       - institution: "伦敦大学学院(UCL)"
         area: "计算机科学"
@@ -44,7 +43,7 @@ cv:
     论文发表:
       - title: "RLMuscle: Muscle-Driven Character Animation via Reinforcement Learning"
         authors:
-          - "Chunlei Li"
+          - "**Chunlei Li**"
           - "Siyuan Yu"
           - "Yang Gao"
           - "Shuai Li"
@@ -58,7 +57,7 @@ cv:
 
       - title: "MGPBD: A Multigrid Accelerated Global XPBD Solver"
         authors:
-          - "Chunlei Li"
+          - "**Chunlei Li**"
           - "Peng Yu"
           - "Tiantian Liu"
           - "Siyuan Yu"
@@ -68,7 +67,7 @@ cv:
           - "Yang Gao"
           - "Qinping Zhao"
         date: "2025-08-14"
-        journal: "SIGGRAPH"
+        journal: "SIGGRAPH | [项目主页](https://chunleili.github.io/project-page-mgpbd/)"
         doi: "10.1145/3721238.3730720"
         summary: "动机:XPBD 的 Gauss-Seidel 求解器难以消除低频误差,导致高分辨率、高刚度仿真不稳定。创新点:提出全局 UA-AMG 预条件共轭梯度求解器,结合惰性延拓算子复用与轻量近核空间构造,以极低开销显著提升收敛性与稳定性。"
 
@@ -76,7 +75,7 @@ cv:
         authors:
             - "Peng Yu"
             - "Ruiqi Wang"
-            - "Chunlei Li"
+            - "**Chunlei Li**"
             - "Yuxuan Li"
             - "Xiao Zhai"
             - "Yuanbo He"
@@ -89,44 +88,47 @@ cv:
 
       - title: "A Unified Particle-Based Solver for non-Newtonian Behaviors Simulation"
         authors:
-          - "Chunlei Li"
+          - "**Chunlei Li**"
           - "Yang Gao"
           - "Jiayi He"
           - "Tianwei Cheng"
           - "Shuai Li"
           - "Aimin Hao"
         date: "2023-12-01"
-        journal: "IEEE Transactions on Visualization and Computer Graphics"
+        journal: "IEEE Transactions on Visualization and Computer Graphics | [项目主页](https://chunleili.github.io/project-page-nonNewton/)"
         doi: "10.1109/TVCG.2023.3341453"
         summary: "动机:血液、巧克力融化、水-淀粉混合物等涉及的非牛顿行为兼具类流体与类固体特征,单一用途的求解器难以统一刻画。创新点:提出统一的 SPH 求解器,采用广义 Maxwell 模型对粘性、弹性与塑性进行统一物理建模,在同一框架内再现剪切变稀/变稠及粘弹性效果。"
 
       - title: "Comparison between Two Eulerian-Lagrangian Methods: CFD-DEM & MPPIC on the biomass gasification in a fluidized bed"
         authors:
-          - "Chunlei Li"
+          - "**Chunlei Li**"
           - "Qitai Eri"
         date: "2021-02-25"
         journal: "Biomass Conversion and Biorefinery"
         doi: "10.1007/s13399-021-01384-2"
+        summary: "（硕士期间工作）"
 
       - title: "Comparative Study of Three Modified sCO2 Brayton Recompression Cycles Based on Energy and Exergy Analysis with GA Optimization"
         authors:
-          - "Chunlei Li"
+          - "**Chunlei Li**"
           - "Qitai Eri"
         date: "2021-01-15"
         journal: "International Journal of Exergy"
         doi: "10.1504/IJEX.2021.115652"
+        summary: "（硕士期间工作）"
 
       - title: "Multi-objective Optimization of sCO₂, sCO₂/tCO₂ Cycles Based on Energy-Exergy-Economy Balanced Analysis"
         authors:
-          - "Chunlei Li"
+          - "**Chunlei Li**"
           - "Qitai Eri"
         date: "2022-04-19"
         journal: "International Journal of Exergy"
         doi: "10.1504/IJEX.2022.122308"
+        summary: "（硕士期间工作）"
 
 
 
-    工作经历:
+    实习和项目经历:
       - company: 泽森科工 (Zeno Tech)
         position: 研发实习生
         location: 远程
@@ -142,7 +144,7 @@ cv:
         highlights:
           - "实习:研发 PBD 方法,在刘天添博士指导下开发 PBD 求解器。"
       - company: 阿里巴巴 (Alibaba)
-        position: 研发
+        position: 横向项目
         location: 北京
         start_date: 2025-05
         end_date: 2025-11
@@ -172,8 +174,6 @@ cv:
         details: "Houdini(5 年使用经验)"
       - label: "物理引擎"
         details: "Newton(PR 贡献者)、MuJoCo、PhysX"
-      - label: "世界模型"
-        details: "具有调试 DreamZero 的经验"
 locale:
   date_template: "YEAR年MONTH月"
   last_updated_date_template: "最近更新于 TODAY"
@@ -187,6 +187,8 @@ locale:
   years: "年"
 design:
   theme: engineeringresumes
+  entries:
+    allow_page_break_in_entries: false
   entry_types:
     publication_entry:
       main_column_second_row_template: "AUTHORS\nURL (JOURNAL)\nSUMMARY"
