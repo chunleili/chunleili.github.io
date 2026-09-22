@@ -58,7 +58,7 @@ I'm a PhD candidate at the VR Lab of Beihang University from 2021, supervised by
 - Dec 2023
 - Chunlei Li, Yang Gao, Jiayi He, Tianwei Cheng, Shuai Li, Aimin Hao
 - IEEE Transactions on Visualization and Computer Graphics
-- Motivation: non-Newtonian materials such as mud, dough and slime span fluid-like and solid-like behaviors that single-purpose solvers cannot capture consistently. Novelty: a unified SPH solver whose constitutive model smoothly covers viscous, elastic and plastic regimes, reproducing shear-thinning/thickening and viscoelastic effects in one framework.
+- Motivation: non-Newtonian behaviors in blood, melting chocolate, and water-starch mixtures span fluid-like and solid-like regimes that single-purpose solvers cannot capture consistently. Novelty: a unified SPH solver using a generalized Maxwell model for unified physical modeling of viscosity, elasticity, and plasticity, reproducing shear-thinning/thickening and viscoelastic effects in one framework.
 
 ## Comparison between Two Eulerian-Lagrangian Methods: CFD-DEM & MPPIC on the biomass gasification in a fluidized bed ([10.1007/s13399-021-01384-2](https://doi.org/10.1007/s13399-021-01384-2))
 - Feb 2021

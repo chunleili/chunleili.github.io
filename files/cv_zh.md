@@ -58,7 +58,7 @@
 - 2023年12月
 - Chunlei Li, Yang Gao, Jiayi He, Tianwei Cheng, Shuai Li, Aimin Hao
 - IEEE Transactions on Visualization and Computer Graphics
-- 动机:泥浆、面团、粘液等非牛顿材料兼具类流体与类固体行为,单一用途的求解器难以统一刻画。创新点:提出统一的 SPH 求解器,其本构模型平滑覆盖粘性、弹性与塑性区间,在同一框架内再现剪切变稀/变稠及粘弹性效果。
+- 动机:血液、巧克力融化、水-淀粉混合物等涉及的非牛顿行为兼具类流体与类固体特征,单一用途的求解器难以统一刻画。创新点:提出统一的 SPH 求解器,采用广义 Maxwell 模型对粘性、弹性与塑性进行统一物理建模,在同一框架内再现剪切变稀/变稠及粘弹性效果。
 
 ## Comparison between Two Eulerian-Lagrangian Methods: CFD-DEM & MPPIC on the biomass gasification in a fluidized bed ([10.1007/s13399-021-01384-2](https://doi.org/10.1007/s13399-021-01384-2))
 - 2021年2月
