@@ -6,7 +6,7 @@ cv:
   website: "https://chunleili.github.io/"
   sections:
     个人简介:
-      - "2021 年起在北京航空航天大学虚拟现实实验室攻读博士学位,师从赵沁平教授、高阳教授与李帅教授,研究方向为计算机图形学中的物理仿真。曾在伦敦大学学院(UCL)访学,师从王鹤教授,预计 2026 年 12 月毕业。研究兴趣:数值方法、物理仿真、基于物理的动画、强化学习、计算机图形学、AI4S、偏微分方程。 **个人主页:[chunleili.github.io](https://chunleili.github.io/)**。"
+      - "2021 年起在北京航空航天大学虚拟现实实验室攻读博士学位,师从赵沁平教授、高阳教授与李帅教授,研究方向为计算机图形学中的物理仿真。曾在伦敦大学学院(UCL)访学,师从王鹤教授,预计 2026 年 12 月毕业。研究兴趣:数值方法、物理仿真、基于物理的动画、强化学习、计算机图形学、AI4S、偏微分方程。 **个人主页:[https://chunleili.github.io/](https://chunleili.github.io/)**。"
     教育经历:
       - institution: "伦敦大学学院(UCL)"
         area: "计算机科学"
@@ -51,7 +51,7 @@ cv:
           - "Aimin Hao"
           - "He Wang"
         date: "在审"
-        journal: "IEEE Transactions on Visualization and Computer Graphics"
+        journal: "TVCG (CCF-A, SCI Q1)"
         url: "https://chunleili.github.io/project-page-rlmuscle/"
         summary: "动机:在大多数三维动画流程中,美术师需要逐块肌肉手工调节激活量,费时费力且缺乏物理真实感。创新点:提出基于一维 Hill 型替代模型训练的强化学习控制器,自动求解每块肌肉的激活量,并以此驱动带 Hill 型纤维约束的 GPU 多重网格 XPBD 体积仿真器,以每帧 18 毫秒驱动含 194 块肌肉的全身模型。"
 
@@ -67,7 +67,7 @@ cv:
           - "Yang Gao"
           - "Qinping Zhao"
         date: "2025-08-14"
-        journal: "SIGGRAPH | [项目主页](https://chunleili.github.io/project-page-mgpbd/)"
+        journal: "SIGGRAPH (CCF-A) | [https://chunleili.github.io/project-page-mgpbd/](https://chunleili.github.io/project-page-mgpbd/)"
         doi: "10.1145/3721238.3730720"
         summary: "动机:XPBD 的 Gauss-Seidel 求解器难以消除低频误差,导致高分辨率、高刚度仿真不稳定。创新点:提出全局 UA-AMG 预条件共轭梯度求解器,结合惰性延拓算子复用与轻量近核空间构造,以极低开销显著提升收敛性与稳定性。"
 
@@ -82,7 +82,7 @@ cv:
             - "Hongyu Wu"
             - "Aimin Hao"
         date: "2025-04-19"
-        journal: "Pacific Graphics"
+        journal: "Pacific Graphics (CCF-B)"
         doi: "10.2312/pg.20251267"
         summary: "动机:切割会实时改变网格拓扑,使并行 GPU 求解器依赖的预计算约束划分与着色失效。创新点:提出并行约束图重划分与重着色方案,可即时恢复求解器的并行性,实现实时软体切割。"
 
@@ -95,7 +95,7 @@ cv:
           - "Shuai Li"
           - "Aimin Hao"
         date: "2023-12-01"
-        journal: "IEEE Transactions on Visualization and Computer Graphics | [项目主页](https://chunleili.github.io/project-page-nonNewton/)"
+        journal: "TVCG (CCF-A, SCI Q1) | [https://chunleili.github.io/project-page-nonNewton/](https://chunleili.github.io/project-page-nonNewton/)"
         doi: "10.1109/TVCG.2023.3341453"
         summary: "动机:血液、巧克力融化、水-淀粉混合物等涉及的非牛顿行为兼具类流体与类固体特征,单一用途的求解器难以统一刻画。创新点:提出统一的 SPH 求解器,采用广义 Maxwell 模型对粘性、弹性与塑性进行统一物理建模,在同一框架内再现剪切变稀/变稠及粘弹性效果。"
 
@@ -104,7 +104,7 @@ cv:
           - "**Chunlei Li**"
           - "Qitai Eri"
         date: "2021-02-25"
-        journal: "Biomass Conversion and Biorefinery"
+        journal: "Biomass Conversion and Biorefinery (SCI Q2)"
         doi: "10.1007/s13399-021-01384-2"
         summary: "（硕士期间工作）"
 
@@ -113,7 +113,7 @@ cv:
           - "**Chunlei Li**"
           - "Qitai Eri"
         date: "2021-01-15"
-        journal: "International Journal of Exergy"
+        journal: "International Journal of Exergy (SCI Q4)"
         doi: "10.1504/IJEX.2021.115652"
         summary: "（硕士期间工作）"
 
@@ -122,7 +122,7 @@ cv:
           - "**Chunlei Li**"
           - "Qitai Eri"
         date: "2022-04-19"
-        journal: "International Journal of Exergy"
+        journal: "International Journal of Exergy (SCI Q4)"
         doi: "10.1504/IJEX.2022.122308"
         summary: "（硕士期间工作）"
 
