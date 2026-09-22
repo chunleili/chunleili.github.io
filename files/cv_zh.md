@@ -2,13 +2,13 @@
 
 - Phone: +86 176 0063 3417
 - Email: [li_cl@foxmail.com](mailto:li_cl@foxmail.com)
-- Location: 伦敦 / 北京
+- Location: 北京
 - Website: [chunleili.github.io](https://chunleili.github.io/)
 
 
 # 个人简介
 
-本人自 2021 年起在北京航空航天大学虚拟现实实验室攻读博士学位,师从赵沁平教授、高阳教授与李帅教授,研究方向为计算机图形学中的物理仿真。曾在伦敦大学学院(UCL)访学,师从王鹤教授,预计 2026 年 12 月毕业。研究兴趣:数值方法、物理仿真、基于物理的动画、强化学习、计算机图形学、AI4S、偏微分方程。 个人主页:[chunleili.github.io](https://chunleili.github.io/)。
+2021 年起在北京航空航天大学虚拟现实实验室攻读博士学位,师从赵沁平教授、高阳教授与李帅教授,研究方向为计算机图形学中的物理仿真。曾在伦敦大学学院(UCL)访学,师从王鹤教授,预计 2026 年 12 月毕业。研究兴趣:数值方法、物理仿真、基于物理的动画、强化学习、计算机图形学、AI4S、偏微分方程。 **个人主页:[chunleili.github.io](https://chunleili.github.io/)**。
 
 # 教育经历
 

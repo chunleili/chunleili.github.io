@@ -2,13 +2,13 @@
 
 - Phone: +86 176 0063 3417
 - Email: [li_cl@foxmail.com](mailto:li_cl@foxmail.com)
-- Location: London / Beijing
+- Location: Beijing
 - Website: [chunleili.github.io](https://chunleili.github.io/)
 
 
 # Summary
 
-I'm a PhD candidate at the VR Lab of Beihang University from 2021, supervised by Prof. Qinping Zhao (赵沁平), Prof. Yang Gao (高阳), and Prof. Shuai Li (李帅). My research focuses on physical simulation in computer graphics. I was a visiting student at University College London, supervised by Prof. He Wang (王鹤). I expect to graduate in December 2026. Interest: Numerical Methods, Physical Simulation, Physical Based Animation, Reinforcement Learning, Computer Graphics, AI4S, PDE. Personal homepage: [chunleili.github.io](https://chunleili.github.io/).
+I'm a PhD candidate at the VR Lab of Beihang University from 2021, supervised by Prof. Qinping Zhao (赵沁平), Prof. Yang Gao (高阳), and Prof. Shuai Li (李帅). My research focuses on physical simulation in computer graphics. I was a visiting student at University College London, supervised by Prof. He Wang (王鹤). I expect to graduate in December 2026. Interest: Numerical Methods, Physical Simulation, Physical Based Animation, Reinforcement Learning, Computer Graphics, AI4S, PDE. **Personal homepage: [chunleili.github.io](https://chunleili.github.io/)**.
 
 # Education
 
