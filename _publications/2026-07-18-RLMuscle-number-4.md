@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/2026-07-18-RLMuscle-number-4
 date: 2026-07-18
-venue: 'IEEE TVCG (Under Review)'
+venue: 'arXiv preprint'
 authors: 'Chunlei Li, Siyuan Yu, Yang Gao, Shuai Li, Peng Yu, Aimin Hao, He Wang'
 teaser: 'images/rlmuscle_preview.png'
 code: 'https://github.com/chunleili/rlmuscleV2'

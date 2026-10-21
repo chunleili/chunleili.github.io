@@ -35,9 +35,9 @@ I'm a PhD candidate at the VR Lab of Beihang University from 2021, supervised by
 # Publications
 
 ## RLMuscle: Muscle-Driven Character Animation via Reinforcement Learning ([https://chunleili.github.io/project-page-rlmuscle/](https://chunleili.github.io/project-page-rlmuscle/))
-- Under Review
+- Oct 2026
 - **Chunlei Li**, Siyuan Yu, Yang Gao, Shuai Li, Peng Yu, Aimin Hao, He Wang
-- TVCG (CCF-A, SCI Q1)
+- arXiv preprint
 
 - Motivation: in most 3D animation pipelines artists hand-tune per-muscle activations, which is time-consuming and lacks physical realism. Novelty: an RL controller trained on a 1D Hill-type surrogate automatically discovers per-muscle activations, which then drive a GPU multigrid-XPBD volumetric simulator with Hill-type fiber constraints, animating a 194-muscle full-body model at 18 ms per frame.
 

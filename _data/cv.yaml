@@ -50,8 +50,8 @@ cv:
           - "Peng Yu"
           - "Aimin Hao"
           - "He Wang"
-        date: "Under Review"
-        journal: "TVCG (CCF-A, SCI Q1)"
+        date: "2026-10"
+        journal: "arXiv preprint"
         url: "https://chunleili.github.io/project-page-rlmuscle/"
         summary: "Motivation: in most 3D animation pipelines artists hand-tune per-muscle activations, which is time-consuming and lacks physical realism. Novelty: an RL controller trained on a 1D Hill-type surrogate automatically discovers per-muscle activations, which then drive a GPU multigrid-XPBD volumetric simulator with Hill-type fiber constraints, animating a 194-muscle full-body model at 18 ms per frame."
 
