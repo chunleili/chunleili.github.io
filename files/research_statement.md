@@ -28,9 +28,9 @@ Materials such as mud, dough, and slime traverse fluid-like and solid-like regim
 
 ### Simulation and learning in the loop
 
-In **RLMuscle** (arXiv preprint) a reinforcement-learning controller trains on a cheap 1D surrogate, and the discovered activations drive a GPU multigrid-XPBD volumetric simulator, animating a 194-muscle body at 18 ms per frame.
+In **RLMuscle** (arXiv:2610.30033) a reinforcement-learning controller trains on a cheap 1D surrogate, and the discovered activations drive a GPU multigrid-XPBD volumetric simulator, animating a 194-muscle body at 18 ms per frame.
 
-![RLMuscle: reinforcement-learned per-muscle activations drive a 194-muscle volumetric body through walking, kicking, swimming, and squatting at 18 ms per frame (arXiv preprint).](../images/rlmuscle_preview.png)
+![RLMuscle: reinforcement-learned per-muscle activations drive a 194-muscle volumetric body through walking, kicking, swimming, and squatting at 18 ms per frame (arXiv:2610.30033).](../images/rlmuscle_preview.png)
 
 ## Future Research Directions
 

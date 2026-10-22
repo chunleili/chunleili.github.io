@@ -34,10 +34,10 @@
 
 # 论文发表
 
-## RLMuscle: Muscle-Driven Character Animation via Reinforcement Learning ([https://chunleili.github.io/project-page-rlmuscle/](https://chunleili.github.io/project-page-rlmuscle/))
+## RLMuscle: Muscle-Driven Character Animation via Reinforcement Learning ([https://doi.org/10.48550/arXiv.2610.30033](https://doi.org/10.48550/arXiv.2610.30033))
 - 2026年10月
 - **Chunlei Li**, Siyuan Yu, Yang Gao, Shuai Li, Peng Yu, Aimin Hao, He Wang
-- arXiv preprint
+- arXiv preprint arXiv:2610.30033 | [https://chunleili.github.io/project-page-rlmuscle/](https://chunleili.github.io/project-page-rlmuscle/)
 
 - 动机:在大多数三维动画流程中,美术师需要逐块肌肉手工调节激活量,费时费力且缺乏物理真实感。创新点:提出基于一维 Hill 型替代模型训练的强化学习控制器,自动求解每块肌肉的激活量,并以此驱动带 Hill 型纤维约束的 GPU 多重网格 XPBD 体积仿真器,以每帧 18 毫秒驱动含 194 块肌肉的全身模型。
 

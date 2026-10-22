@@ -4,9 +4,10 @@ collection: publications
 category: manuscripts
 permalink: /publication/2026-07-18-RLMuscle-number-4
 date: 2026-07-18
-venue: 'arXiv preprint'
+venue: 'arXiv preprint arXiv:2610.30033'
 authors: 'Chunlei Li, Siyuan Yu, Yang Gao, Shuai Li, Peng Yu, Aimin Hao, He Wang'
 teaser: 'images/rlmuscle_preview.png'
+paperurl: 'https://arxiv.org/abs/2610.30033'
 code: 'https://github.com/chunleili/rlmuscleV2'
 slidesurl: 'https://github.com/chunleili/chunleili.github.io/releases/download/rlmuscle-assets/RLMuscle-slides.pptx'
 videourl: 'https://github.com/chunleili/chunleili.github.io/releases/download/rlmuscle-assets/RLMuscle-v2.mp4'
